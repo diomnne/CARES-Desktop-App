@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CARES
 {
-    public partial class Form1 : Form
+    public partial class sign_up_page : Form
     {
-        public Form1()
+        public sign_up_page()
         {
             InitializeComponent();
         }
