@@ -73,7 +73,7 @@
             this.txt_first_name.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_first_name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_first_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_first_name.Location = new System.Drawing.Point(1740, 501);
+            this.txt_first_name.Location = new System.Drawing.Point(1679, 501);
             this.txt_first_name.MaxLength = 50;
             this.txt_first_name.Name = "txt_first_name";
             this.txt_first_name.PasswordChar = '\0';
@@ -93,7 +93,7 @@
             this.txt_last_name.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_last_name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_last_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_last_name.Location = new System.Drawing.Point(1740, 628);
+            this.txt_last_name.Location = new System.Drawing.Point(1679, 628);
             this.txt_last_name.MaxLength = 50;
             this.txt_last_name.Name = "txt_last_name";
             this.txt_last_name.PasswordChar = '\0';
@@ -114,7 +114,7 @@
             this.txt_email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_email.Location = new System.Drawing.Point(1740, 753);
+            this.txt_email.Location = new System.Drawing.Point(1679, 753);
             this.txt_email.MaxLength = 255;
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '\0';
@@ -135,7 +135,7 @@
             this.txt_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_password.Location = new System.Drawing.Point(1740, 880);
+            this.txt_password.Location = new System.Drawing.Point(1679, 880);
             this.txt_password.MaxLength = 255;
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '●';
@@ -155,7 +155,7 @@
             this.txt_confirm_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_confirm_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_confirm_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_confirm_password.Location = new System.Drawing.Point(1740, 1005);
+            this.txt_confirm_password.Location = new System.Drawing.Point(1679, 1005);
             this.txt_confirm_password.MaxLength = 255;
             this.txt_confirm_password.Name = "txt_confirm_password";
             this.txt_confirm_password.PasswordChar = '●';
@@ -169,7 +169,7 @@
             this.lbl_first_name.AutoSize = true;
             this.lbl_first_name.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_first_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_first_name.Location = new System.Drawing.Point(1743, 459);
+            this.lbl_first_name.Location = new System.Drawing.Point(1682, 459);
             this.lbl_first_name.Name = "lbl_first_name";
             this.lbl_first_name.Size = new System.Drawing.Size(132, 32);
             this.lbl_first_name.TabIndex = 10;
@@ -180,7 +180,7 @@
             this.lbl_last_name.AutoSize = true;
             this.lbl_last_name.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_last_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_last_name.Location = new System.Drawing.Point(1743, 585);
+            this.lbl_last_name.Location = new System.Drawing.Point(1682, 585);
             this.lbl_last_name.Name = "lbl_last_name";
             this.lbl_last_name.Size = new System.Drawing.Size(130, 32);
             this.lbl_last_name.TabIndex = 11;
@@ -191,7 +191,7 @@
             this.lbl_email.AutoSize = true;
             this.lbl_email.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_email.Location = new System.Drawing.Point(1743, 711);
+            this.lbl_email.Location = new System.Drawing.Point(1682, 711);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(72, 32);
             this.lbl_email.TabIndex = 12;
@@ -202,7 +202,7 @@
             this.lbl_password.AutoSize = true;
             this.lbl_password.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_password.Location = new System.Drawing.Point(1743, 838);
+            this.lbl_password.Location = new System.Drawing.Point(1682, 838);
             this.lbl_password.Name = "lbl_password";
             this.lbl_password.Size = new System.Drawing.Size(214, 32);
             this.lbl_password.TabIndex = 13;
@@ -213,7 +213,7 @@
             this.lbl_confirm.AutoSize = true;
             this.lbl_confirm.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_confirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_confirm.Location = new System.Drawing.Point(1743, 963);
+            this.lbl_confirm.Location = new System.Drawing.Point(1682, 963);
             this.lbl_confirm.Name = "lbl_confirm";
             this.lbl_confirm.Size = new System.Drawing.Size(209, 32);
             this.lbl_confirm.TabIndex = 14;
@@ -223,7 +223,7 @@
             // 
             this.btn_view2.Image = global::CARES.Properties.Resources.view;
             this.btn_view2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view2.Location = new System.Drawing.Point(2176, 1013);
+            this.btn_view2.Location = new System.Drawing.Point(2115, 1013);
             this.btn_view2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_view2.Name = "btn_view2";
             this.btn_view2.OnHoverImage = global::CARES.Properties.Resources.view_hover;
@@ -236,7 +236,7 @@
             // 
             this.btn_view1.Image = global::CARES.Properties.Resources.view;
             this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view1.Location = new System.Drawing.Point(2176, 887);
+            this.btn_view1.Location = new System.Drawing.Point(2115, 887);
             this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_view1.Name = "btn_view1";
             this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
@@ -249,7 +249,7 @@
             // 
             this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
             this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide1.Location = new System.Drawing.Point(2176, 887);
+            this.btn_hide1.Location = new System.Drawing.Point(2115, 887);
             this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
             this.btn_hide1.Name = "btn_hide1";
             this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
@@ -262,7 +262,7 @@
             // 
             this.btn_hide2.Image = global::CARES.Properties.Resources.hide;
             this.btn_hide2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide2.Location = new System.Drawing.Point(2176, 1013);
+            this.btn_hide2.Location = new System.Drawing.Point(2115, 1013);
             this.btn_hide2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_hide2.Name = "btn_hide2";
             this.btn_hide2.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
