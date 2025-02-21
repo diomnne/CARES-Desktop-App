@@ -28,6 +28,11 @@ namespace CARES
 
         }
 
+        private void pnl_signup_container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btn_view1_password_Click(object sender, EventArgs e)
         {
             if (txt_password.PasswordChar == '●')
@@ -139,5 +144,7 @@ namespace CARES
                 MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        
     }
 }
