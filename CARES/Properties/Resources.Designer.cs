@@ -63,6 +63,46 @@ namespace CARES.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit_hover {
+            get {
+                object obj = ResourceManager.GetObject("exit_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hand_drawn_hospital_reception_scene {
+            get {
+                object obj = ResourceManager.GetObject("hand_drawn_hospital_reception_scene", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hand_drawn_hospital_reception_scene_with_people_wearing_face_masks {
+            get {
+                object obj = ResourceManager.GetObject("hand_drawn_hospital_reception_scene_with_people_wearing_face_masks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide {
             get {
                 object obj = ResourceManager.GetObject("hide", resourceCulture);
@@ -76,6 +116,36 @@ namespace CARES.Properties {
         internal static System.Drawing.Bitmap hide_hover {
             get {
                 object obj = ResourceManager.GetObject("hide_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize {
+            get {
+                object obj = ResourceManager.GetObject("minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_hover {
+            get {
+                object obj = ResourceManager.GetObject("minimize_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap online_doctor_concept_illustration {
+            get {
+                object obj = ResourceManager.GetObject("online_doctor_concept_illustration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
