@@ -1,6 +1,6 @@
 ﻿namespace CARES
 {
-    partial class sign_up_page
+    partial class sign_up
     {
         /// <summary>
         /// Required designer variable.
@@ -51,12 +51,14 @@
             this.txt_last_name = new Guna.UI.WinForms.GunaTextBox();
             this.lbl_email = new Guna.UI.WinForms.GunaLabel();
             this.lbl_last_name = new Guna.UI.WinForms.GunaLabel();
+            this.lbl_create_account = new Guna.UI.WinForms.GunaLabel();
             this.pnl_signup_container.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_signup_container
             // 
             this.pnl_signup_container.BaseColor = System.Drawing.Color.White;
+            this.pnl_signup_container.Controls.Add(this.lbl_create_account);
             this.pnl_signup_container.Controls.Add(this.lbl_repeatpass_error);
             this.pnl_signup_container.Controls.Add(this.lbl_password_error);
             this.pnl_signup_container.Controls.Add(this.lbl_email_error);
@@ -81,7 +83,7 @@
             this.pnl_signup_container.Controls.Add(this.lbl_last_name);
             this.pnl_signup_container.Location = new System.Drawing.Point(580, 245);
             this.pnl_signup_container.Name = "pnl_signup_container";
-            this.pnl_signup_container.Radius = 20;
+            this.pnl_signup_container.Radius = 8;
             this.pnl_signup_container.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(112)))), ((int)(((byte)(121)))));
             this.pnl_signup_container.ShadowDepth = 70;
             this.pnl_signup_container.ShadowShift = 10;
@@ -422,6 +424,18 @@
             this.lbl_last_name.TabIndex = 11;
             this.lbl_last_name.Text = "Last Name*";
             // 
+            // lbl_create_account
+            // 
+            this.lbl_create_account.AutoSize = true;
+            this.lbl_create_account.BackColor = System.Drawing.Color.White;
+            this.lbl_create_account.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_create_account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.lbl_create_account.Location = new System.Drawing.Point(400, 121);
+            this.lbl_create_account.Name = "lbl_create_account";
+            this.lbl_create_account.Size = new System.Drawing.Size(627, 77);
+            this.lbl_create_account.TabIndex = 25;
+            this.lbl_create_account.Text = "Create an Account";
+            // 
             // sign_up_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -464,6 +478,7 @@
         private Guna.UI.WinForms.GunaLabel lbl_repeatpass_error;
         private Guna.UI.WinForms.GunaLabel lbl_password_error;
         private Guna.UI.WinForms.GunaLabel lbl_email_error;
+        private Guna.UI.WinForms.GunaLabel lbl_create_account;
     }
 }
 
