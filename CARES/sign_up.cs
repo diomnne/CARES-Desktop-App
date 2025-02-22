@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CARES
 {
-    public partial class sign_up_page : Form
+    public partial class sign_up : Form
     {
-        public sign_up_page()
+        public sign_up()
         {
             InitializeComponent();
         }
@@ -145,6 +145,5 @@ namespace CARES
             }
         }
 
-        
     }
 }

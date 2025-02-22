@@ -50,16 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="sign_up_page.cs">
+    <Compile Include="sign_up.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sign_up_page.Designer.cs">
-      <DependentUpon>sign_up_page.cs</DependentUpon>
+    <Compile Include="sign_up.Designer.cs">
+      <DependentUpon>sign_up.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="sign_up_page.resx">
-      <DependentUpon>sign_up_page.cs</DependentUpon>
+    <EmbeddedResource Include="sign_up.resx">
+      <DependentUpon>sign_up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
