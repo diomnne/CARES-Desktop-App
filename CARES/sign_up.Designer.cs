@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnl_signup_container = new Guna.UI.WinForms.GunaShadowPanel();
+            this.lbl_create_account = new Guna.UI.WinForms.GunaLabel();
             this.lbl_repeatpass_error = new Guna.UI.WinForms.GunaLabel();
             this.lbl_password_error = new Guna.UI.WinForms.GunaLabel();
             this.lbl_email_error = new Guna.UI.WinForms.GunaLabel();
@@ -37,10 +38,6 @@
             this.ll_login = new Guna.UI.WinForms.GunaLinkLabel();
             this.lbl_account = new Guna.UI.WinForms.GunaLabel();
             this.btn_signup = new Guna.UI.WinForms.GunaButton();
-            this.btn_view2 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_hide2 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
             this.txt_first_name = new Guna.UI.WinForms.GunaTextBox();
             this.txt_password = new Guna.UI.WinForms.GunaTextBox();
             this.lbl_confirm = new Guna.UI.WinForms.GunaLabel();
@@ -51,7 +48,10 @@
             this.txt_last_name = new Guna.UI.WinForms.GunaTextBox();
             this.lbl_email = new Guna.UI.WinForms.GunaLabel();
             this.lbl_last_name = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_create_account = new Guna.UI.WinForms.GunaLabel();
+            this.btn_view2 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_hide2 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
             this.pnl_signup_container.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,13 +83,25 @@
             this.pnl_signup_container.Controls.Add(this.lbl_last_name);
             this.pnl_signup_container.Location = new System.Drawing.Point(580, 245);
             this.pnl_signup_container.Name = "pnl_signup_container";
-            this.pnl_signup_container.Radius = 8;
+            this.pnl_signup_container.Radius = 3;
             this.pnl_signup_container.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(112)))), ((int)(((byte)(121)))));
             this.pnl_signup_container.ShadowDepth = 70;
             this.pnl_signup_container.ShadowShift = 10;
             this.pnl_signup_container.Size = new System.Drawing.Size(1431, 1080);
             this.pnl_signup_container.TabIndex = 18;
             this.pnl_signup_container.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_signup_container_Paint);
+            // 
+            // lbl_create_account
+            // 
+            this.lbl_create_account.AutoSize = true;
+            this.lbl_create_account.BackColor = System.Drawing.Color.White;
+            this.lbl_create_account.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_create_account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.lbl_create_account.Location = new System.Drawing.Point(400, 121);
+            this.lbl_create_account.Name = "lbl_create_account";
+            this.lbl_create_account.Size = new System.Drawing.Size(627, 77);
+            this.lbl_create_account.TabIndex = 25;
+            this.lbl_create_account.Text = "Create an Account";
             // 
             // lbl_repeatpass_error
             // 
@@ -205,62 +217,6 @@
             this.btn_signup.Text = "Create Account";
             this.btn_signup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
-            // 
-            // btn_view2
-            // 
-            this.btn_view2.BackColor = System.Drawing.Color.White;
-            this.btn_view2.Image = global::CARES.Properties.Resources.view;
-            this.btn_view2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view2.Location = new System.Drawing.Point(1087, 647);
-            this.btn_view2.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view2.Name = "btn_view2";
-            this.btn_view2.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view2.Size = new System.Drawing.Size(50, 50);
-            this.btn_view2.TabIndex = 15;
-            this.btn_view2.Click += new System.EventHandler(this.btn_view2_Click);
-            // 
-            // btn_hide2
-            // 
-            this.btn_hide2.BackColor = System.Drawing.Color.White;
-            this.btn_hide2.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide2.Location = new System.Drawing.Point(1087, 647);
-            this.btn_hide2.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide2.Name = "btn_hide2";
-            this.btn_hide2.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide2.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide2.TabIndex = 16;
-            this.btn_hide2.Click += new System.EventHandler(this.btn_hide2_Click);
-            // 
-            // btn_view1
-            // 
-            this.btn_view1.BackColor = System.Drawing.Color.White;
-            this.btn_view1.Image = global::CARES.Properties.Resources.view;
-            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view1.Location = new System.Drawing.Point(654, 647);
-            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view1.Name = "btn_view1";
-            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view1.Size = new System.Drawing.Size(50, 50);
-            this.btn_view1.TabIndex = 8;
-            this.btn_view1.Click += new System.EventHandler(this.btn_view1_password_Click);
-            // 
-            // btn_hide1
-            // 
-            this.btn_hide1.BackColor = System.Drawing.Color.White;
-            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide1.Location = new System.Drawing.Point(654, 647);
-            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide1.Name = "btn_hide1";
-            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide1.TabIndex = 9;
-            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
             // 
             // txt_first_name
             // 
@@ -424,19 +380,63 @@
             this.lbl_last_name.TabIndex = 11;
             this.lbl_last_name.Text = "Last Name*";
             // 
-            // lbl_create_account
+            // btn_view2
             // 
-            this.lbl_create_account.AutoSize = true;
-            this.lbl_create_account.BackColor = System.Drawing.Color.White;
-            this.lbl_create_account.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_create_account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_create_account.Location = new System.Drawing.Point(400, 121);
-            this.lbl_create_account.Name = "lbl_create_account";
-            this.lbl_create_account.Size = new System.Drawing.Size(627, 77);
-            this.lbl_create_account.TabIndex = 25;
-            this.lbl_create_account.Text = "Create an Account";
+            this.btn_view2.BackColor = System.Drawing.Color.White;
+            this.btn_view2.Image = global::CARES.Properties.Resources.view;
+            this.btn_view2.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_view2.Location = new System.Drawing.Point(1087, 647);
+            this.btn_view2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_view2.Name = "btn_view2";
+            this.btn_view2.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btn_view2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_view2.Size = new System.Drawing.Size(50, 50);
+            this.btn_view2.TabIndex = 15;
+            this.btn_view2.Click += new System.EventHandler(this.btn_view2_Click);
             // 
-            // sign_up_page
+            // btn_hide2
+            // 
+            this.btn_hide2.BackColor = System.Drawing.Color.White;
+            this.btn_hide2.Image = global::CARES.Properties.Resources.hide;
+            this.btn_hide2.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_hide2.Location = new System.Drawing.Point(1087, 647);
+            this.btn_hide2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_hide2.Name = "btn_hide2";
+            this.btn_hide2.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btn_hide2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_hide2.Size = new System.Drawing.Size(50, 50);
+            this.btn_hide2.TabIndex = 16;
+            this.btn_hide2.Click += new System.EventHandler(this.btn_hide2_Click);
+            // 
+            // btn_view1
+            // 
+            this.btn_view1.BackColor = System.Drawing.Color.White;
+            this.btn_view1.Image = global::CARES.Properties.Resources.view;
+            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_view1.Location = new System.Drawing.Point(654, 647);
+            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_view1.Name = "btn_view1";
+            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_view1.Size = new System.Drawing.Size(50, 50);
+            this.btn_view1.TabIndex = 8;
+            this.btn_view1.Click += new System.EventHandler(this.btn_view1_password_Click);
+            // 
+            // btn_hide1
+            // 
+            this.btn_hide1.BackColor = System.Drawing.Color.White;
+            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
+            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_hide1.Location = new System.Drawing.Point(654, 647);
+            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_hide1.Name = "btn_hide1";
+            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
+            this.btn_hide1.TabIndex = 9;
+            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
+            // 
+            // sign_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -444,7 +444,7 @@
             this.ClientSize = new System.Drawing.Size(2560, 1600);
             this.Controls.Add(this.pnl_signup_container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "sign_up_page";
+            this.Name = "sign_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_signup_container.ResumeLayout(false);

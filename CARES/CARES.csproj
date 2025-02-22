@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_in.Designer.cs">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </Compile>
     <Compile Include="sign_up.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="log_in.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sign_up.resx">
       <DependentUpon>sign_up.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +104,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hide_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3724894.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3343994.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clinic-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-room-with-bed-wheels-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-doctor-concept-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-drawn-hospital-reception-scene.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-drawn-hospital-reception-scene-with-people-wearing-face-masks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
