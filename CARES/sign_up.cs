@@ -123,6 +123,7 @@ namespace CARES
             {
                 lbl_password_error.Text = "Password must be at least 8 characters.";
                 lbl_password_error.Visible = true;
+                txt_repeat_password.Text = "";
                 isValid = false;
             }
 
@@ -145,5 +146,11 @@ namespace CARES
             }
         }
 
+        private void ll_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            log_in l = new log_in();
+            l.Show();
+            this.Hide();
+        }
     }
 }

@@ -188,6 +188,7 @@
             this.ll_signup.TabIndex = 35;
             this.ll_signup.TabStop = true;
             this.ll_signup.Text = "Sign up";
+            this.ll_signup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_signup_LinkClicked);
             // 
             // lbl_account
             // 
