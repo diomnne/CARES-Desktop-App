@@ -38,6 +38,10 @@
             this.ll_login = new Guna.UI.WinForms.GunaLinkLabel();
             this.lbl_account = new Guna.UI.WinForms.GunaLabel();
             this.btn_signup = new Guna.UI.WinForms.GunaButton();
+            this.btn_view2 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_hide2 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
             this.txt_first_name = new Guna.UI.WinForms.GunaTextBox();
             this.txt_password = new Guna.UI.WinForms.GunaTextBox();
             this.lbl_confirm = new Guna.UI.WinForms.GunaLabel();
@@ -48,10 +52,6 @@
             this.txt_last_name = new Guna.UI.WinForms.GunaTextBox();
             this.lbl_email = new Guna.UI.WinForms.GunaLabel();
             this.lbl_last_name = new Guna.UI.WinForms.GunaLabel();
-            this.btn_view2 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_hide2 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
             this.pnl_signup_container.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,6 +180,7 @@
             this.ll_login.TabIndex = 19;
             this.ll_login.TabStop = true;
             this.ll_login.Text = "Log in";
+            this.ll_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_login_LinkClicked);
             // 
             // lbl_account
             // 
@@ -217,6 +218,62 @@
             this.btn_signup.Text = "Create Account";
             this.btn_signup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
+            // 
+            // btn_view2
+            // 
+            this.btn_view2.BackColor = System.Drawing.Color.White;
+            this.btn_view2.Image = global::CARES.Properties.Resources.view;
+            this.btn_view2.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_view2.Location = new System.Drawing.Point(1087, 647);
+            this.btn_view2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_view2.Name = "btn_view2";
+            this.btn_view2.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btn_view2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_view2.Size = new System.Drawing.Size(50, 50);
+            this.btn_view2.TabIndex = 15;
+            this.btn_view2.Click += new System.EventHandler(this.btn_view2_Click);
+            // 
+            // btn_hide2
+            // 
+            this.btn_hide2.BackColor = System.Drawing.Color.White;
+            this.btn_hide2.Image = global::CARES.Properties.Resources.hide;
+            this.btn_hide2.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_hide2.Location = new System.Drawing.Point(1087, 647);
+            this.btn_hide2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_hide2.Name = "btn_hide2";
+            this.btn_hide2.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btn_hide2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_hide2.Size = new System.Drawing.Size(50, 50);
+            this.btn_hide2.TabIndex = 16;
+            this.btn_hide2.Click += new System.EventHandler(this.btn_hide2_Click);
+            // 
+            // btn_view1
+            // 
+            this.btn_view1.BackColor = System.Drawing.Color.White;
+            this.btn_view1.Image = global::CARES.Properties.Resources.view;
+            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_view1.Location = new System.Drawing.Point(654, 647);
+            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_view1.Name = "btn_view1";
+            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_view1.Size = new System.Drawing.Size(50, 50);
+            this.btn_view1.TabIndex = 8;
+            this.btn_view1.Click += new System.EventHandler(this.btn_view1_password_Click);
+            // 
+            // btn_hide1
+            // 
+            this.btn_hide1.BackColor = System.Drawing.Color.White;
+            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
+            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_hide1.Location = new System.Drawing.Point(654, 647);
+            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_hide1.Name = "btn_hide1";
+            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
+            this.btn_hide1.TabIndex = 9;
+            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
             // 
             // txt_first_name
             // 
@@ -379,62 +436,6 @@
             this.lbl_last_name.Size = new System.Drawing.Size(140, 32);
             this.lbl_last_name.TabIndex = 11;
             this.lbl_last_name.Text = "Last Name*";
-            // 
-            // btn_view2
-            // 
-            this.btn_view2.BackColor = System.Drawing.Color.White;
-            this.btn_view2.Image = global::CARES.Properties.Resources.view;
-            this.btn_view2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view2.Location = new System.Drawing.Point(1087, 647);
-            this.btn_view2.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view2.Name = "btn_view2";
-            this.btn_view2.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view2.Size = new System.Drawing.Size(50, 50);
-            this.btn_view2.TabIndex = 15;
-            this.btn_view2.Click += new System.EventHandler(this.btn_view2_Click);
-            // 
-            // btn_hide2
-            // 
-            this.btn_hide2.BackColor = System.Drawing.Color.White;
-            this.btn_hide2.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide2.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide2.Location = new System.Drawing.Point(1087, 647);
-            this.btn_hide2.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide2.Name = "btn_hide2";
-            this.btn_hide2.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide2.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide2.TabIndex = 16;
-            this.btn_hide2.Click += new System.EventHandler(this.btn_hide2_Click);
-            // 
-            // btn_view1
-            // 
-            this.btn_view1.BackColor = System.Drawing.Color.White;
-            this.btn_view1.Image = global::CARES.Properties.Resources.view;
-            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view1.Location = new System.Drawing.Point(654, 647);
-            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view1.Name = "btn_view1";
-            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view1.Size = new System.Drawing.Size(50, 50);
-            this.btn_view1.TabIndex = 8;
-            this.btn_view1.Click += new System.EventHandler(this.btn_view1_password_Click);
-            // 
-            // btn_hide1
-            // 
-            this.btn_hide1.BackColor = System.Drawing.Color.White;
-            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide1.Location = new System.Drawing.Point(654, 647);
-            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide1.Name = "btn_hide1";
-            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide1.TabIndex = 9;
-            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
             // 
             // sign_up
             // 

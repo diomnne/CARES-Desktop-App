@@ -49,5 +49,12 @@ namespace CARES
                 Application.Exit();
             }
         }
+
+        private void ll_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            sign_up s = new sign_up();
+            s.Show();
+            this.Hide();
+        }
     }
 }
