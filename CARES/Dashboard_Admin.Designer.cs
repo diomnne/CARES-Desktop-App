@@ -1,6 +1,6 @@
 ﻿namespace CARES
 {
-    partial class dashboard_mro
+    partial class Dashboard_Admin
     {
         /// <summary>
         /// Required designer variable.

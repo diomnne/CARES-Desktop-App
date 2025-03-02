@@ -112,43 +112,43 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboard_mro.cs">
+    <Compile Include="Dashboard_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboard_mro.Designer.cs">
-      <DependentUpon>dashboard_mro.cs</DependentUpon>
+    <Compile Include="Dashboard_Admin.Designer.cs">
+      <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="log_in.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="log_in.Designer.cs">
-      <DependentUpon>log_in.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_mro.cs">
+    <Compile Include="Main_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_mro.Designer.cs">
-      <DependentUpon>main_mro.cs</DependentUpon>
+    <Compile Include="Main_Admin.Designer.cs">
+      <DependentUpon>Main_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="sign_up.cs">
+    <Compile Include="Signup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sign_up.Designer.cs">
-      <DependentUpon>sign_up.cs</DependentUpon>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="dashboard_mro.resx">
-      <DependentUpon>dashboard_mro.cs</DependentUpon>
+    <EmbeddedResource Include="Dashboard_Admin.resx">
+      <DependentUpon>Dashboard_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="log_in.resx">
-      <DependentUpon>log_in.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main_mro.resx">
-      <DependentUpon>main_mro.cs</DependentUpon>
+    <EmbeddedResource Include="Main_Admin.resx">
+      <DependentUpon>Main_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sign_up.resx">
-      <DependentUpon>sign_up.cs</DependentUpon>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

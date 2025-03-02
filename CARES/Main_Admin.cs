@@ -13,13 +13,13 @@ using FontAwesome.Sharp;
 
 namespace CARES
 {
-    public partial class main_mro : Form
+    public partial class Main_Admin : Form
     {
 
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        public main_mro()
+        public Main_Admin()
         {
             InitializeComponent();
 
@@ -96,7 +96,7 @@ namespace CARES
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.teal);
-            OpenChildForm(new dashboard_mro());
+            OpenChildForm(new Dashboard_Admin());
         }
 
         private void btn_medical_records_Click(object sender, EventArgs e)

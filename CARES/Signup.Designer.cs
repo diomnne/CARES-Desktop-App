@@ -1,6 +1,6 @@
 ﻿namespace CARES
 {
-    partial class sign_up
+    partial class Signup
     {
         /// <summary>
         /// Required designer variable.

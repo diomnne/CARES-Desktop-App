@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace CARES
 {
-    public partial class log_in : Form
+    public partial class Login : Form
     {
-        public log_in()
+        public Login()
         {
             InitializeComponent();
         }
@@ -52,7 +54,7 @@ namespace CARES
 
         private void ll_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            sign_up s = new sign_up();
+            Signup s = new Signup();
             s.Show();
             this.Hide();
         }

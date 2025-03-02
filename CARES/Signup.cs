@@ -8,12 +8,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace CARES
 {
-    public partial class sign_up : Form
+    public partial class Signup : Form
     {
-        public sign_up()
+        public Signup()
         {
             InitializeComponent();
         }
@@ -148,7 +150,7 @@ namespace CARES
 
         private void ll_login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            log_in l = new log_in();
+            Login l = new Login();
             l.Show();
             this.Hide();
         }
