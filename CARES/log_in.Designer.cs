@@ -39,15 +39,15 @@
             this.ll_signup = new Guna.UI.WinForms.GunaLinkLabel();
             this.lbl_account = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.btn_minimize = new Guna.UI.WinForms.GunaButton();
-            this.btn_exit = new Guna.UI.WinForms.GunaButton();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
             this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
+            this.btn_minimize = new Guna.UI.WinForms.GunaButton();
+            this.btn_exit = new Guna.UI.WinForms.GunaButton();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.gunaShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_password_error
@@ -213,6 +213,56 @@
             this.gunaPanel1.Size = new System.Drawing.Size(1540, 1600);
             this.gunaPanel1.TabIndex = 34;
             // 
+            // gunaShadowPanel1
+            // 
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.btn_view1);
+            this.gunaShadowPanel1.Controls.Add(this.btn_hide1);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_create_account);
+            this.gunaShadowPanel1.Controls.Add(this.ll_signup);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_account);
+            this.gunaShadowPanel1.Controls.Add(this.txt_password);
+            this.gunaShadowPanel1.Controls.Add(this.btn_login);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_email_error);
+            this.gunaShadowPanel1.Controls.Add(this.txt_email);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_password);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_password_error);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_email);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(111, 119);
+            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
+            this.gunaShadowPanel1.Radius = 3;
+            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(895, 1369);
+            this.gunaShadowPanel1.TabIndex = 36;
+            // 
+            // btn_view1
+            // 
+            this.btn_view1.BackColor = System.Drawing.Color.White;
+            this.btn_view1.Image = global::CARES.Properties.Resources.view;
+            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_view1.Location = new System.Drawing.Point(686, 679);
+            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_view1.Name = "btn_view1";
+            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_view1.Size = new System.Drawing.Size(50, 50);
+            this.btn_view1.TabIndex = 26;
+            this.btn_view1.Click += new System.EventHandler(this.btn_view1_Click);
+            // 
+            // btn_hide1
+            // 
+            this.btn_hide1.BackColor = System.Drawing.Color.White;
+            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
+            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
+            this.btn_hide1.Location = new System.Drawing.Point(686, 679);
+            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_hide1.Name = "btn_hide1";
+            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
+            this.btn_hide1.TabIndex = 27;
+            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
+            // 
             // btn_minimize
             // 
             this.btn_minimize.AnimationHoverSpeed = 0.07F;
@@ -271,60 +321,10 @@
             this.gunaTransfarantPictureBox1.TabIndex = 0;
             this.gunaTransfarantPictureBox1.TabStop = false;
             // 
-            // gunaShadowPanel1
-            // 
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.btn_view1);
-            this.gunaShadowPanel1.Controls.Add(this.btn_hide1);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_create_account);
-            this.gunaShadowPanel1.Controls.Add(this.ll_signup);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_account);
-            this.gunaShadowPanel1.Controls.Add(this.txt_password);
-            this.gunaShadowPanel1.Controls.Add(this.btn_login);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_email_error);
-            this.gunaShadowPanel1.Controls.Add(this.txt_email);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_password);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_password_error);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_email);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(111, 100);
-            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
-            this.gunaShadowPanel1.Radius = 3;
-            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(895, 1335);
-            this.gunaShadowPanel1.TabIndex = 36;
-            // 
-            // btn_view1
-            // 
-            this.btn_view1.BackColor = System.Drawing.Color.White;
-            this.btn_view1.Image = global::CARES.Properties.Resources.view;
-            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view1.Location = new System.Drawing.Point(686, 679);
-            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view1.Name = "btn_view1";
-            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view1.Size = new System.Drawing.Size(50, 50);
-            this.btn_view1.TabIndex = 26;
-            this.btn_view1.Click += new System.EventHandler(this.btn_view1_Click);
-            // 
-            // btn_hide1
-            // 
-            this.btn_hide1.BackColor = System.Drawing.Color.White;
-            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide1.Location = new System.Drawing.Point(686, 679);
-            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide1.Name = "btn_hide1";
-            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide1.TabIndex = 27;
-            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
-            // 
             // log_in
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(2560, 1600);
             this.Controls.Add(this.gunaShadowPanel1);
@@ -334,9 +334,9 @@
             this.Text = "log_in";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.gunaPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
