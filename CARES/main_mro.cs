@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,13 +18,19 @@ namespace CARES
 
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
         public main_mro()
         {
             InitializeComponent();
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(10, 100);
-            pnl_sidebar.Controls.Add(leftBorderBtn);
+            pnl_navbar.Controls.Add(leftBorderBtn);
+
+            this.Text = string.Empty;
+            //this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private struct RGBColors
@@ -70,9 +77,26 @@ namespace CARES
             }
         }
 
+        private void OpenChildForm(Form childForm)
+        {
+            if(currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnl_form_container.Controls.Add(childForm);
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.teal);
+            OpenChildForm(new dashboard_mro());
         }
 
         private void btn_medical_records_Click(object sender, EventArgs e)
@@ -83,6 +107,18 @@ namespace CARES
         private void btn_manage_records_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.teal);
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void pnl_header_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
