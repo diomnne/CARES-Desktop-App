@@ -15,22 +15,19 @@ namespace CARES
 {
     public partial class Main_Admin : Form
     {
-
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+
+        private int borderSize = 2;
         public Main_Admin()
         {
             InitializeComponent();
 
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 100);
+            leftBorderBtn.Size = new Size(10, 130);
             pnl_navbar.Controls.Add(leftBorderBtn);
 
-            this.Text = string.Empty;
-            //this.ControlBox = false;
-            this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private struct RGBColors
@@ -45,7 +42,7 @@ namespace CARES
         // Methods
         private void ActivateButton(object senderBtn, Color color)
         {
-            if(senderBtn != null)
+            if (senderBtn != null)
             {
                 DisableButton();
 
@@ -99,12 +96,7 @@ namespace CARES
             OpenChildForm(new Dashboard_Admin());
         }
 
-        private void btn_medical_records_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.teal);
-        }
-
-        private void btn_manage_records_Click(object sender, EventArgs e)
+        private void btn_logs_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.teal);
         }
@@ -120,5 +112,26 @@ namespace CARES
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btn_accounts_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.teal);
+        }
+
+        private void btn_consultations_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.teal);
+        }
+
+        private void btn_records_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.teal);
+        }
+
+        private void btn_inventory_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.teal);
+        }
+
     }
 }
