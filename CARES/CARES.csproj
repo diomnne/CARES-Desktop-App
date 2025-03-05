@@ -228,5 +228,6 @@
     <None Include="Resources\exit1.png" />
     <None Include="Resources\exit2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
