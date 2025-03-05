@@ -63,6 +63,26 @@ namespace CARES.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accountsIcon {
+            get {
+                object obj = ResourceManager.GetObject("accountsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dashboardIcon {
+            get {
+                object obj = ResourceManager.GetObject("dashboardIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -143,6 +163,26 @@ namespace CARES.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logsIcon {
+            get {
+                object obj = ResourceManager.GetObject("logsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medicineIcon {
+            get {
+                object obj = ResourceManager.GetObject("medicineIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap min1 {
             get {
                 object obj = ResourceManager.GetObject("min1", resourceCulture);
@@ -186,6 +226,26 @@ namespace CARES.Properties {
         internal static System.Drawing.Bitmap online_doctor_concept_illustration {
             get {
                 object obj = ResourceManager.GetObject("online_doctor_concept_illustration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recordsIcon {
+            get {
+                object obj = ResourceManager.GetObject("recordsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scheduleIcon {
+            get {
+                object obj = ResourceManager.GetObject("scheduleIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

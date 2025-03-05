@@ -40,14 +40,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "dashboard";
             // 
-            // dashboard_mro
+            // Dashboard_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(2054, 1379);
+            this.ClientSize = new System.Drawing.Size(2054, 1464);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "dashboard_mro";
+            this.Name = "Dashboard_Admin";
             this.Text = "Dashboard";
             this.ResumeLayout(false);
             this.PerformLayout();
