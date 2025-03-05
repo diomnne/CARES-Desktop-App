@@ -127,6 +127,7 @@
     <Compile Include="Main_Admin.Designer.cs">
       <DependentUpon>Main_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methods.cs" />
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
     </Compile>

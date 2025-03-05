@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,49 @@ namespace CARES
 {
     public partial class Main_Admin : Form
     {
+        private GunaButton currentBtn;
+        private GunaPanel leftBorderBtn;
+        
         public Main_Admin()
         {
             InitializeComponent();
+
+            leftBorderBtn = new GunaPanel();
+            //leftBorderBtn.Size = new Size(10, 130);
+            leftBorderBtn.BackColor = Color.FromArgb(0, 157, 162);
+            pnlNavbar.Controls.Add(leftBorderBtn);
+        }
+
+        private void ActivateButton(object sender)
+        {
+            if (sender != null)
+            {
+                if (currentBtn != null)
+                {
+                    DisableButton(currentBtn);
+                }
+
+                currentBtn = (GunaButton)sender;
+                currentBtn.BackColor = Color.FromArgb(216, 237, 236);
+                currentBtn.TextAlign = HorizontalAlignment.Center;
+                currentBtn.ImageAlign = HorizontalAlignment.Right;
+
+                leftBorderBtn.Size = new Size(10, currentBtn.Height);
+
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                leftBorderBtn.Visible = true;
+                leftBorderBtn.BringToFront();
+            }
+        }
+
+        private void DisableButton(GunaButton btn)
+        {
+            if(btn != null)
+            {
+                btn.BackColor = Color.FromArgb(253, 253, 253);
+                btn.TextAlign = HorizontalAlignment.Left;
+                btn.ImageAlign = HorizontalAlignment.Left;
+            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -29,32 +70,32 @@ namespace CARES
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
 
         private void btnLogTrail_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
 
         private void btnAccounts_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
 
         private void btnRecords_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
         }
     }
 }
