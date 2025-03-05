@@ -127,6 +127,7 @@
     <Compile Include="Main_Admin.Designer.cs">
       <DependentUpon>Main_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methods.cs" />
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +222,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\dashboardIcon.png" />
+    <None Include="Resources\logsIcon.png" />
+    <None Include="Resources\accountsIcon.png" />
+    <None Include="Resources\medicineIcon.png" />
+    <None Include="Resources\scheduleIcon.png" />
+    <None Include="Resources\recordsIcon.png" />
     <None Include="Resources\min1.png" />
     <None Include="Resources\min2.png" />
     <None Include="Resources\square2.png" />

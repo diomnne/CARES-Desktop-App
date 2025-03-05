@@ -28,247 +28,261 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl_navbar = new Guna.UI.WinForms.GunaPanel();
-            this.btn_logs = new FontAwesome.Sharp.IconButton();
-            this.btn_dashboard = new FontAwesome.Sharp.IconButton();
-            this.pnl_logo = new Guna.UI.WinForms.GunaPanel();
-            this.pnl_header = new Guna.UI.WinForms.GunaPanel();
-            this.pnl_form_container = new Guna.UI.WinForms.GunaPanel();
-            this.btn_settings = new FontAwesome.Sharp.IconButton();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.btn_inventory = new FontAwesome.Sharp.IconButton();
-            this.btn_records = new FontAwesome.Sharp.IconButton();
-            this.btn_consultations = new FontAwesome.Sharp.IconButton();
-            this.btn_accounts = new FontAwesome.Sharp.IconButton();
-            this.lbl_page_name = new System.Windows.Forms.Label();
-            this.pnl_navbar.SuspendLayout();
-            this.pnl_header.SuspendLayout();
+            this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new Guna.UI.WinForms.GunaButton();
+            this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.pnlNavbar = new Guna.UI.WinForms.GunaPanel();
+            this.btnDashboard = new Guna.UI.WinForms.GunaButton();
+            this.pnlLogo = new Guna.UI.WinForms.GunaPanel();
+            this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
+            this.btnLogTrail = new Guna.UI.WinForms.GunaButton();
+            this.btnAccounts = new Guna.UI.WinForms.GunaButton();
+            this.btnSchedule = new Guna.UI.WinForms.GunaButton();
+            this.btnRecords = new Guna.UI.WinForms.GunaButton();
+            this.btnInventory = new Guna.UI.WinForms.GunaButton();
+            this.pnlTitleBar.SuspendLayout();
+            this.pnlNavbar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnl_navbar
+            // pnlTitleBar
             // 
-            this.pnl_navbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.pnl_navbar.Controls.Add(this.btn_settings);
-            this.pnl_navbar.Controls.Add(this.gunaPanel1);
-            this.pnl_navbar.Controls.Add(this.btn_inventory);
-            this.pnl_navbar.Controls.Add(this.btn_records);
-            this.pnl_navbar.Controls.Add(this.btn_consultations);
-            this.pnl_navbar.Controls.Add(this.btn_accounts);
-            this.pnl_navbar.Controls.Add(this.btn_logs);
-            this.pnl_navbar.Controls.Add(this.btn_dashboard);
-            this.pnl_navbar.Controls.Add(this.pnl_logo);
-            this.pnl_navbar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_navbar.Location = new System.Drawing.Point(0, 0);
-            this.pnl_navbar.Name = "pnl_navbar";
-            this.pnl_navbar.Size = new System.Drawing.Size(480, 1529);
-            this.pnl_navbar.TabIndex = 0;
+            this.pnlTitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTitleBar.Controls.Add(this.btnMinimize);
+            this.pnlTitleBar.Controls.Add(this.btnExit);
+            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitleBar.Name = "pnlTitleBar";
+            this.pnlTitleBar.Size = new System.Drawing.Size(2534, 65);
+            this.pnlTitleBar.TabIndex = 38;
             // 
-            // btn_logs
+            // btnMinimize
             // 
-            this.btn_logs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_logs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_logs.FlatAppearance.BorderSize = 0;
-            this.btn_logs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logs.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_logs.IconChar = FontAwesome.Sharp.IconChar.Server;
-            this.btn_logs.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_logs.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_logs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logs.Location = new System.Drawing.Point(0, 280);
-            this.btn_logs.Name = "btn_logs";
-            this.btn_logs.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_logs.Size = new System.Drawing.Size(480, 130);
-            this.btn_logs.TabIndex = 3;
-            this.btn_logs.Text = "   Log Trail";
-            this.btn_logs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_logs.UseVisualStyleBackColor = false;
-            this.btn_logs.Click += new System.EventHandler(this.btn_logs_Click);
+            this.btnMinimize.AnimationHoverSpeed = 0.07F;
+            this.btnMinimize.AnimationSpeed = 0.03F;
+            this.btnMinimize.BaseColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = global::CARES.Properties.Resources.min1;
+            this.btnMinimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMinimize.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnMinimize.Location = new System.Drawing.Point(2344, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnMinimize.OnHoverImage = null;
+            this.btnMinimize.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMinimize.Size = new System.Drawing.Size(95, 65);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // btn_dashboard
+            // btnExit
             // 
-            this.btn_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_dashboard.IconChar = FontAwesome.Sharp.IconChar.GripHorizontal;
-            this.btn_dashboard.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_dashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dashboard.Location = new System.Drawing.Point(0, 150);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_dashboard.Size = new System.Drawing.Size(480, 130);
-            this.btn_dashboard.TabIndex = 1;
-            this.btn_dashboard.Text = "   Dashboard";
-            this.btn_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_dashboard.UseVisualStyleBackColor = false;
-            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btnExit.AnimationHoverSpeed = 0.07F;
+            this.btnExit.AnimationSpeed = 0.03F;
+            this.btnExit.BaseColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Black;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::CARES.Properties.Resources.exit1;
+            this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnExit.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnExit.Location = new System.Drawing.Point(2439, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnExit.OnHoverImage = global::CARES.Properties.Resources.exit2;
+            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnExit.Size = new System.Drawing.Size(95, 65);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pnl_logo
+            // pnlNavbar
             // 
-            this.pnl_logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_logo.Location = new System.Drawing.Point(0, 0);
-            this.pnl_logo.Name = "pnl_logo";
-            this.pnl_logo.Size = new System.Drawing.Size(480, 150);
-            this.pnl_logo.TabIndex = 0;
+            this.pnlNavbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.pnlNavbar.Controls.Add(this.btnInventory);
+            this.pnlNavbar.Controls.Add(this.btnRecords);
+            this.pnlNavbar.Controls.Add(this.btnSchedule);
+            this.pnlNavbar.Controls.Add(this.btnAccounts);
+            this.pnlNavbar.Controls.Add(this.btnLogTrail);
+            this.pnlNavbar.Controls.Add(this.btnDashboard);
+            this.pnlNavbar.Controls.Add(this.pnlLogo);
+            this.pnlNavbar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlNavbar.Location = new System.Drawing.Point(0, 65);
+            this.pnlNavbar.Name = "pnlNavbar";
+            this.pnlNavbar.Size = new System.Drawing.Size(480, 1464);
+            this.pnlNavbar.TabIndex = 39;
             // 
-            // pnl_header
+            // btnDashboard
             // 
-            this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.pnl_header.Controls.Add(this.lbl_page_name);
-            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_header.Location = new System.Drawing.Point(480, 0);
-            this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(2054, 150);
-            this.pnl_header.TabIndex = 1;
-            this.pnl_header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_header_MouseDown);
+            this.btnDashboard.AnimationHoverSpeed = 0.07F;
+            this.btnDashboard.AnimationSpeed = 0.03F;
+            this.btnDashboard.BaseColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.BorderColor = System.Drawing.Color.Black;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnDashboard.Image = global::CARES.Properties.Resources.dashboardIcon;
+            this.btnDashboard.ImageOffsetX = 10;
+            this.btnDashboard.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 150);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnDashboard.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDashboard.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnDashboard.OnHoverImage = null;
+            this.btnDashboard.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnDashboard.Size = new System.Drawing.Size(480, 130);
+            this.btnDashboard.TabIndex = 5;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextOffsetX = 10;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // pnl_form_container
+            // pnlLogo
             // 
-            this.pnl_form_container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.pnl_form_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_form_container.Location = new System.Drawing.Point(480, 150);
-            this.pnl_form_container.Name = "pnl_form_container";
-            this.pnl_form_container.Size = new System.Drawing.Size(2054, 1379);
-            this.pnl_form_container.TabIndex = 3;
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(480, 150);
+            this.pnlLogo.TabIndex = 0;
             // 
-            // btn_settings
+            // pnlFormContainer
             // 
-            this.btn_settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_settings.FlatAppearance.BorderSize = 0;
-            this.btn_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_settings.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_settings.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.btn_settings.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_settings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_settings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_settings.Location = new System.Drawing.Point(0, 1399);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_settings.Size = new System.Drawing.Size(480, 130);
-            this.btn_settings.TabIndex = 14;
-            this.btn_settings.Text = "   Settings";
-            this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_settings.UseVisualStyleBackColor = false;
+            this.pnlFormContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlFormContainer.Location = new System.Drawing.Point(480, 65);
+            this.pnlFormContainer.Name = "pnlFormContainer";
+            this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1464);
+            this.pnlFormContainer.TabIndex = 40;
             // 
-            // gunaPanel1
+            // btnLogTrail
             // 
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 930);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(480, 147);
-            this.gunaPanel1.TabIndex = 13;
+            this.btnLogTrail.AnimationHoverSpeed = 0.07F;
+            this.btnLogTrail.AnimationSpeed = 0.03F;
+            this.btnLogTrail.BaseColor = System.Drawing.Color.Transparent;
+            this.btnLogTrail.BorderColor = System.Drawing.Color.Black;
+            this.btnLogTrail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogTrail.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogTrail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnLogTrail.Image = global::CARES.Properties.Resources.logsIcon;
+            this.btnLogTrail.ImageOffsetX = 10;
+            this.btnLogTrail.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnLogTrail.Location = new System.Drawing.Point(0, 280);
+            this.btnLogTrail.Name = "btnLogTrail";
+            this.btnLogTrail.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnLogTrail.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLogTrail.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnLogTrail.OnHoverImage = null;
+            this.btnLogTrail.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnLogTrail.Size = new System.Drawing.Size(480, 130);
+            this.btnLogTrail.TabIndex = 6;
+            this.btnLogTrail.Text = "Log Trail";
+            this.btnLogTrail.TextOffsetX = 10;
+            this.btnLogTrail.Click += new System.EventHandler(this.btnLogTrail_Click);
             // 
-            // btn_inventory
+            // btnAccounts
             // 
-            this.btn_inventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_inventory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_inventory.FlatAppearance.BorderSize = 0;
-            this.btn_inventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inventory.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_inventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_inventory.IconChar = FontAwesome.Sharp.IconChar.Capsules;
-            this.btn_inventory.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_inventory.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_inventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_inventory.Location = new System.Drawing.Point(0, 800);
-            this.btn_inventory.Name = "btn_inventory";
-            this.btn_inventory.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_inventory.Size = new System.Drawing.Size(480, 130);
-            this.btn_inventory.TabIndex = 12;
-            this.btn_inventory.Text = "   Medicine Inventory";
-            this.btn_inventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_inventory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_inventory.UseVisualStyleBackColor = false;
-            this.btn_inventory.Click += new System.EventHandler(this.btn_inventory_Click);
+            this.btnAccounts.AnimationHoverSpeed = 0.07F;
+            this.btnAccounts.AnimationSpeed = 0.03F;
+            this.btnAccounts.BaseColor = System.Drawing.Color.Transparent;
+            this.btnAccounts.BorderColor = System.Drawing.Color.Black;
+            this.btnAccounts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccounts.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnAccounts.Image = global::CARES.Properties.Resources.accountsIcon;
+            this.btnAccounts.ImageOffsetX = 10;
+            this.btnAccounts.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnAccounts.Location = new System.Drawing.Point(0, 410);
+            this.btnAccounts.Name = "btnAccounts";
+            this.btnAccounts.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnAccounts.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAccounts.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnAccounts.OnHoverImage = null;
+            this.btnAccounts.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnAccounts.Size = new System.Drawing.Size(480, 130);
+            this.btnAccounts.TabIndex = 7;
+            this.btnAccounts.Text = "Manage Accounts";
+            this.btnAccounts.TextOffsetX = 10;
+            this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
             // 
-            // btn_records
+            // btnSchedule
             // 
-            this.btn_records.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_records.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_records.FlatAppearance.BorderSize = 0;
-            this.btn_records.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_records.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_records.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_records.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
-            this.btn_records.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_records.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_records.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_records.Location = new System.Drawing.Point(0, 670);
-            this.btn_records.Name = "btn_records";
-            this.btn_records.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_records.Size = new System.Drawing.Size(480, 130);
-            this.btn_records.TabIndex = 11;
-            this.btn_records.Text = "   Medical Records";
-            this.btn_records.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_records.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_records.UseVisualStyleBackColor = false;
-            this.btn_records.Click += new System.EventHandler(this.btn_records_Click);
+            this.btnSchedule.AnimationHoverSpeed = 0.07F;
+            this.btnSchedule.AnimationSpeed = 0.03F;
+            this.btnSchedule.BaseColor = System.Drawing.Color.Transparent;
+            this.btnSchedule.BorderColor = System.Drawing.Color.Black;
+            this.btnSchedule.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSchedule.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnSchedule.Image = global::CARES.Properties.Resources.scheduleIcon;
+            this.btnSchedule.ImageOffsetX = 10;
+            this.btnSchedule.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnSchedule.Location = new System.Drawing.Point(0, 540);
+            this.btnSchedule.Name = "btnSchedule";
+            this.btnSchedule.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnSchedule.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSchedule.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnSchedule.OnHoverImage = null;
+            this.btnSchedule.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnSchedule.Size = new System.Drawing.Size(480, 130);
+            this.btnSchedule.TabIndex = 8;
+            this.btnSchedule.Text = "Consultation Schedule";
+            this.btnSchedule.TextOffsetX = 10;
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
-            // btn_consultations
+            // btnRecords
             // 
-            this.btn_consultations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_consultations.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_consultations.FlatAppearance.BorderSize = 0;
-            this.btn_consultations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_consultations.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_consultations.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
-            this.btn_consultations.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_consultations.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_consultations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_consultations.Location = new System.Drawing.Point(0, 540);
-            this.btn_consultations.Name = "btn_consultations";
-            this.btn_consultations.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_consultations.Size = new System.Drawing.Size(480, 130);
-            this.btn_consultations.TabIndex = 10;
-            this.btn_consultations.Text = "   Consultation Schedule";
-            this.btn_consultations.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_consultations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_consultations.UseVisualStyleBackColor = false;
-            this.btn_consultations.Click += new System.EventHandler(this.btn_consultations_Click);
+            this.btnRecords.AnimationHoverSpeed = 0.07F;
+            this.btnRecords.AnimationSpeed = 0.03F;
+            this.btnRecords.BaseColor = System.Drawing.Color.Transparent;
+            this.btnRecords.BorderColor = System.Drawing.Color.Black;
+            this.btnRecords.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecords.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecords.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnRecords.Image = global::CARES.Properties.Resources.recordsIcon;
+            this.btnRecords.ImageOffsetX = 10;
+            this.btnRecords.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnRecords.Location = new System.Drawing.Point(0, 670);
+            this.btnRecords.Name = "btnRecords";
+            this.btnRecords.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnRecords.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnRecords.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnRecords.OnHoverImage = null;
+            this.btnRecords.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnRecords.Size = new System.Drawing.Size(480, 130);
+            this.btnRecords.TabIndex = 9;
+            this.btnRecords.Text = "Medical Records";
+            this.btnRecords.TextOffsetX = 10;
+            this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
             // 
-            // btn_accounts
+            // btnInventory
             // 
-            this.btn_accounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btn_accounts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_accounts.FlatAppearance.BorderSize = 0;
-            this.btn_accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_accounts.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_accounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_accounts.IconChar = FontAwesome.Sharp.IconChar.ContactBook;
-            this.btn_accounts.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_accounts.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_accounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_accounts.Location = new System.Drawing.Point(0, 410);
-            this.btn_accounts.Name = "btn_accounts";
-            this.btn_accounts.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btn_accounts.Size = new System.Drawing.Size(480, 130);
-            this.btn_accounts.TabIndex = 9;
-            this.btn_accounts.Text = "   Manage Accounts";
-            this.btn_accounts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_accounts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_accounts.UseVisualStyleBackColor = false;
-            this.btn_accounts.Click += new System.EventHandler(this.btn_accounts_Click);
-            // 
-            // lbl_page_name
-            // 
-            this.lbl_page_name.AutoSize = true;
-            this.lbl_page_name.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_page_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.lbl_page_name.Location = new System.Drawing.Point(45, 54);
-            this.lbl_page_name.Name = "lbl_page_name";
-            this.lbl_page_name.Size = new System.Drawing.Size(113, 38);
-            this.lbl_page_name.TabIndex = 0;
-            this.lbl_page_name.Text = "label1";
+            this.btnInventory.AnimationHoverSpeed = 0.07F;
+            this.btnInventory.AnimationSpeed = 0.03F;
+            this.btnInventory.BaseColor = System.Drawing.Color.Transparent;
+            this.btnInventory.BorderColor = System.Drawing.Color.Black;
+            this.btnInventory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventory.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnInventory.Image = global::CARES.Properties.Resources.medicineIcon;
+            this.btnInventory.ImageOffsetX = 10;
+            this.btnInventory.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnInventory.Location = new System.Drawing.Point(0, 800);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnInventory.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnInventory.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnInventory.OnHoverImage = null;
+            this.btnInventory.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnInventory.Size = new System.Drawing.Size(480, 130);
+            this.btnInventory.TabIndex = 10;
+            this.btnInventory.Text = "Medicine Inventory";
+            this.btnInventory.TextOffsetX = 10;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
             // Main_Admin
             // 
@@ -276,33 +290,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(2534, 1529);
-            this.Controls.Add(this.pnl_form_container);
-            this.Controls.Add(this.pnl_header);
-            this.Controls.Add(this.pnl_navbar);
+            this.Controls.Add(this.pnlFormContainer);
+            this.Controls.Add(this.pnlNavbar);
+            this.Controls.Add(this.pnlTitleBar);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_Admin";
-            this.Text = "Main";
+            this.Text = "Main_Admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.pnl_navbar.ResumeLayout(false);
-            this.pnl_header.ResumeLayout(false);
-            this.pnl_header.PerformLayout();
+            this.pnlTitleBar.ResumeLayout(false);
+            this.pnlNavbar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPanel pnl_navbar;
-        private Guna.UI.WinForms.GunaPanel pnl_logo;
-        private FontAwesome.Sharp.IconButton btn_dashboard;
-        private Guna.UI.WinForms.GunaPanel pnl_header;
-        private Guna.UI.WinForms.GunaPanel pnl_form_container;
-        private FontAwesome.Sharp.IconButton btn_logs;
-        private FontAwesome.Sharp.IconButton btn_settings;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private FontAwesome.Sharp.IconButton btn_inventory;
-        private FontAwesome.Sharp.IconButton btn_records;
-        private FontAwesome.Sharp.IconButton btn_consultations;
-        private FontAwesome.Sharp.IconButton btn_accounts;
-        private System.Windows.Forms.Label lbl_page_name;
+        private System.Windows.Forms.Panel pnlTitleBar;
+        private Guna.UI.WinForms.GunaButton btnMinimize;
+        private Guna.UI.WinForms.GunaButton btnExit;
+        private Guna.UI.WinForms.GunaPanel pnlNavbar;
+        private Guna.UI.WinForms.GunaButton btnDashboard;
+        private Guna.UI.WinForms.GunaPanel pnlLogo;
+        private Guna.UI.WinForms.GunaPanel pnlFormContainer;
+        private Guna.UI.WinForms.GunaButton btnInventory;
+        private Guna.UI.WinForms.GunaButton btnRecords;
+        private Guna.UI.WinForms.GunaButton btnSchedule;
+        private Guna.UI.WinForms.GunaButton btnAccounts;
+        private Guna.UI.WinForms.GunaButton btnLogTrail;
     }
 }
