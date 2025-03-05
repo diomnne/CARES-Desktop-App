@@ -221,6 +221,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\min1.png" />
+    <None Include="Resources\min2.png" />
+    <None Include="Resources\square2.png" />
+    <None Include="Resources\square1.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\exit2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
