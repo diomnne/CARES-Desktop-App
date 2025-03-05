@@ -28,167 +28,169 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_password_error = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_email_error = new Guna.UI.WinForms.GunaLabel();
-            this.txt_password = new Guna.UI.WinForms.GunaTextBox();
-            this.txt_email = new Guna.UI.WinForms.GunaTextBox();
-            this.lbl_password = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_email = new Guna.UI.WinForms.GunaLabel();
-            this.lbl_create_account = new Guna.UI.WinForms.GunaLabel();
-            this.btn_login = new Guna.UI.WinForms.GunaButton();
-            this.ll_signup = new Guna.UI.WinForms.GunaLinkLabel();
+            this.lblPasswordError = new Guna.UI.WinForms.GunaLabel();
+            this.lblEmailError = new Guna.UI.WinForms.GunaLabel();
+            this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
+            this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
+            this.lblPassword = new Guna.UI.WinForms.GunaLabel();
+            this.lblEmail = new Guna.UI.WinForms.GunaLabel();
+            this.lblCreateAccount = new Guna.UI.WinForms.GunaLabel();
+            this.btnLogin = new Guna.UI.WinForms.GunaButton();
+            this.lnkSignup = new Guna.UI.WinForms.GunaLinkLabel();
             this.lbl_account = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.btn_minimize = new Guna.UI.WinForms.GunaButton();
-            this.btn_exit = new Guna.UI.WinForms.GunaButton();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.btn_view1 = new Guna.UI.WinForms.GunaImageButton();
-            this.btn_hide1 = new Guna.UI.WinForms.GunaImageButton();
+            this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new Guna.UI.WinForms.GunaButton();
+            this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.btnView = new Guna.UI.WinForms.GunaImageButton();
+            this.btnHide = new Guna.UI.WinForms.GunaImageButton();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.gunaShadowPanel1.SuspendLayout();
+            this.pnlTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbl_password_error
+            // lblPasswordError
             // 
-            this.lbl_password_error.AutoSize = true;
-            this.lbl_password_error.BackColor = System.Drawing.Color.White;
-            this.lbl_password_error.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_password_error.Location = new System.Drawing.Point(147, 739);
-            this.lbl_password_error.Name = "lbl_password_error";
-            this.lbl_password_error.Size = new System.Drawing.Size(149, 30);
-            this.lbl_password_error.TabIndex = 31;
-            this.lbl_password_error.Text = "Password Error";
-            this.lbl_password_error.Visible = false;
+            this.lblPasswordError.AutoSize = true;
+            this.lblPasswordError.BackColor = System.Drawing.Color.White;
+            this.lblPasswordError.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasswordError.ForeColor = System.Drawing.Color.Red;
+            this.lblPasswordError.Location = new System.Drawing.Point(147, 739);
+            this.lblPasswordError.Name = "lblPasswordError";
+            this.lblPasswordError.Size = new System.Drawing.Size(149, 30);
+            this.lblPasswordError.TabIndex = 31;
+            this.lblPasswordError.Text = "Password Error";
+            this.lblPasswordError.Visible = false;
             // 
-            // lbl_email_error
+            // lblEmailError
             // 
-            this.lbl_email_error.AutoSize = true;
-            this.lbl_email_error.BackColor = System.Drawing.Color.White;
-            this.lbl_email_error.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_email_error.Location = new System.Drawing.Point(147, 582);
-            this.lbl_email_error.Name = "lbl_email_error";
-            this.lbl_email_error.Size = new System.Drawing.Size(113, 30);
-            this.lbl_email_error.TabIndex = 30;
-            this.lbl_email_error.Text = "Email Error";
-            this.lbl_email_error.Visible = false;
+            this.lblEmailError.AutoSize = true;
+            this.lblEmailError.BackColor = System.Drawing.Color.White;
+            this.lblEmailError.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailError.ForeColor = System.Drawing.Color.Red;
+            this.lblEmailError.Location = new System.Drawing.Point(147, 582);
+            this.lblEmailError.Name = "lblEmailError";
+            this.lblEmailError.Size = new System.Drawing.Size(113, 30);
+            this.lblEmailError.TabIndex = 30;
+            this.lblEmailError.Text = "Email Error";
+            this.lblEmailError.Visible = false;
             // 
-            // txt_password
+            // txtPassword
             // 
-            this.txt_password.BaseColor = System.Drawing.Color.White;
-            this.txt_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_password.BorderSize = 1;
-            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_password.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.txt_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_password.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_password.Location = new System.Drawing.Point(143, 671);
-            this.txt_password.MaxLength = 255;
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '●';
-            this.txt_password.Radius = 7;
-            this.txt_password.Size = new System.Drawing.Size(600, 65);
-            this.txt_password.TabIndex = 25;
-            this.txt_password.TextOffsetX = 7;
+            this.txtPassword.BaseColor = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.txtPassword.Location = new System.Drawing.Point(143, 671);
+            this.txtPassword.MaxLength = 255;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.Radius = 7;
+            this.txtPassword.Size = new System.Drawing.Size(600, 65);
+            this.txtPassword.TabIndex = 25;
+            this.txtPassword.TextOffsetX = 7;
             // 
-            // txt_email
+            // txtEmail
             // 
-            this.txt_email.BaseColor = System.Drawing.Color.White;
-            this.txt_email.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_email.BorderSize = 1;
-            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_email.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_email.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.txt_email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_email.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.txt_email.Location = new System.Drawing.Point(143, 514);
-            this.txt_email.MaxLength = 255;
-            this.txt_email.Name = "txt_email";
-            this.txt_email.PasswordChar = '\0';
-            this.txt_email.Radius = 7;
-            this.txt_email.Size = new System.Drawing.Size(600, 65);
-            this.txt_email.TabIndex = 24;
-            this.txt_email.TextOffsetX = 7;
+            this.txtEmail.BaseColor = System.Drawing.Color.White;
+            this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.BorderSize = 1;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.txtEmail.Location = new System.Drawing.Point(143, 514);
+            this.txtEmail.MaxLength = 255;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.Radius = 7;
+            this.txtEmail.Size = new System.Drawing.Size(600, 65);
+            this.txtEmail.TabIndex = 24;
+            this.txtEmail.TextOffsetX = 7;
             // 
-            // lbl_password
+            // lblPassword
             // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.BackColor = System.Drawing.Color.White;
-            this.lbl_password.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_password.Location = new System.Drawing.Point(146, 635);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(115, 32);
-            this.lbl_password.TabIndex = 29;
-            this.lbl_password.Text = "Password";
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.White;
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.lblPassword.Location = new System.Drawing.Point(146, 635);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(115, 32);
+            this.lblPassword.TabIndex = 29;
+            this.lblPassword.Text = "Password";
             // 
-            // lbl_email
+            // lblEmail
             // 
-            this.lbl_email.AutoSize = true;
-            this.lbl_email.BackColor = System.Drawing.Color.White;
-            this.lbl_email.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_email.Location = new System.Drawing.Point(146, 477);
-            this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(72, 32);
-            this.lbl_email.TabIndex = 28;
-            this.lbl_email.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.White;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.lblEmail.Location = new System.Drawing.Point(146, 477);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(72, 32);
+            this.lblEmail.TabIndex = 28;
+            this.lblEmail.Text = "Email";
             // 
-            // lbl_create_account
+            // lblCreateAccount
             // 
-            this.lbl_create_account.AutoSize = true;
-            this.lbl_create_account.BackColor = System.Drawing.Color.White;
-            this.lbl_create_account.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_create_account.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.lbl_create_account.Location = new System.Drawing.Point(359, 356);
-            this.lbl_create_account.Name = "lbl_create_account";
-            this.lbl_create_account.Size = new System.Drawing.Size(215, 77);
-            this.lbl_create_account.TabIndex = 32;
-            this.lbl_create_account.Text = "Log in";
+            this.lblCreateAccount.AutoSize = true;
+            this.lblCreateAccount.BackColor = System.Drawing.Color.White;
+            this.lblCreateAccount.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.lblCreateAccount.Location = new System.Drawing.Point(359, 356);
+            this.lblCreateAccount.Name = "lblCreateAccount";
+            this.lblCreateAccount.Size = new System.Drawing.Size(215, 77);
+            this.lblCreateAccount.TabIndex = 32;
+            this.lblCreateAccount.Text = "Log in";
             // 
-            // btn_login
+            // btnLogin
             // 
-            this.btn_login.AnimationHoverSpeed = 0.07F;
-            this.btn_login.AnimationSpeed = 0.03F;
-            this.btn_login.BackColor = System.Drawing.Color.White;
-            this.btn_login.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btn_login.BorderColor = System.Drawing.Color.Black;
-            this.btn_login.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Image = null;
-            this.btn_login.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_login.Location = new System.Drawing.Point(250, 827);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(190)))), ((int)(((byte)(196)))));
-            this.btn_login.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_login.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_login.OnHoverImage = null;
-            this.btn_login.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_login.Radius = 5;
-            this.btn_login.Size = new System.Drawing.Size(410, 65);
-            this.btn_login.TabIndex = 33;
-            this.btn_login.Text = "Log in";
-            this.btn_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLogin.AnimationHoverSpeed = 0.07F;
+            this.btnLogin.AnimationSpeed = 0.03F;
+            this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnLogin.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Image = null;
+            this.btnLogin.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLogin.Location = new System.Drawing.Point(250, 827);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(190)))), ((int)(((byte)(196)))));
+            this.btnLogin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLogin.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLogin.OnHoverImage = null;
+            this.btnLogin.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLogin.Radius = 5;
+            this.btnLogin.Size = new System.Drawing.Size(410, 65);
+            this.btnLogin.TabIndex = 33;
+            this.btnLogin.Text = "Log in";
+            this.btnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ll_signup
+            // lnkSignup
             // 
-            this.ll_signup.AutoSize = true;
-            this.ll_signup.BackColor = System.Drawing.Color.White;
-            this.ll_signup.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ll_signup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.ll_signup.Location = new System.Drawing.Point(559, 924);
-            this.ll_signup.Name = "ll_signup";
-            this.ll_signup.Size = new System.Drawing.Size(96, 32);
-            this.ll_signup.TabIndex = 35;
-            this.ll_signup.TabStop = true;
-            this.ll_signup.Text = "Sign up";
-            this.ll_signup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_signup_LinkClicked);
+            this.lnkSignup.AutoSize = true;
+            this.lnkSignup.BackColor = System.Drawing.Color.White;
+            this.lnkSignup.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkSignup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.lnkSignup.Location = new System.Drawing.Point(559, 924);
+            this.lnkSignup.Name = "lnkSignup";
+            this.lnkSignup.Size = new System.Drawing.Size(96, 32);
+            this.lnkSignup.TabIndex = 35;
+            this.lnkSignup.TabStop = true;
+            this.lnkSignup.Text = "Sign up";
+            this.lnkSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_signup_LinkClicked);
             // 
             // lbl_account
             // 
@@ -204,60 +206,119 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
-            this.gunaPanel1.Controls.Add(this.btn_minimize);
-            this.gunaPanel1.Controls.Add(this.btn_exit);
+            this.gunaPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel1.Controls.Add(this.gunaTransfarantPictureBox1);
-            this.gunaPanel1.Location = new System.Drawing.Point(1017, 1);
+            this.gunaPanel1.Location = new System.Drawing.Point(1017, 65);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1540, 1600);
+            this.gunaPanel1.Size = new System.Drawing.Size(1540, 1535);
             this.gunaPanel1.TabIndex = 34;
             // 
-            // btn_minimize
+            // gunaShadowPanel1
             // 
-            this.btn_minimize.AnimationHoverSpeed = 0.07F;
-            this.btn_minimize.AnimationSpeed = 0.03F;
-            this.btn_minimize.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_minimize.BorderColor = System.Drawing.Color.Black;
-            this.btn_minimize.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_minimize.Image = global::CARES.Properties.Resources.minimize;
-            this.btn_minimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_minimize.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_minimize.Location = new System.Drawing.Point(1370, 11);
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(154)))), ((int)(((byte)(153)))));
-            this.btn_minimize.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_minimize.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_minimize.OnHoverImage = global::CARES.Properties.Resources.minimize_hover;
-            this.btn_minimize.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_minimize.Radius = 3;
-            this.btn_minimize.Size = new System.Drawing.Size(70, 55);
-            this.btn_minimize.TabIndex = 2;
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.btnView);
+            this.gunaShadowPanel1.Controls.Add(this.btnHide);
+            this.gunaShadowPanel1.Controls.Add(this.lblCreateAccount);
+            this.gunaShadowPanel1.Controls.Add(this.lnkSignup);
+            this.gunaShadowPanel1.Controls.Add(this.lbl_account);
+            this.gunaShadowPanel1.Controls.Add(this.txtPassword);
+            this.gunaShadowPanel1.Controls.Add(this.btnLogin);
+            this.gunaShadowPanel1.Controls.Add(this.lblEmailError);
+            this.gunaShadowPanel1.Controls.Add(this.txtEmail);
+            this.gunaShadowPanel1.Controls.Add(this.lblPassword);
+            this.gunaShadowPanel1.Controls.Add(this.lblPasswordError);
+            this.gunaShadowPanel1.Controls.Add(this.lblEmail);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(111, 137);
+            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
+            this.gunaShadowPanel1.Radius = 3;
+            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(895, 1329);
+            this.gunaShadowPanel1.TabIndex = 36;
             // 
-            // btn_exit
+            // pnlTitleBar
             // 
-            this.btn_exit.AnimationHoverSpeed = 0.07F;
-            this.btn_exit.AnimationSpeed = 0.03F;
-            this.btn_exit.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_exit.BorderColor = System.Drawing.Color.Black;
-            this.btn_exit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Image = global::CARES.Properties.Resources.exit;
-            this.btn_exit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_exit.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_exit.Location = new System.Drawing.Point(1466, 11);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.OnHoverBaseColor = System.Drawing.Color.Firebrick;
-            this.btn_exit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_exit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_exit.OnHoverImage = global::CARES.Properties.Resources.exit_hover;
-            this.btn_exit.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_exit.Radius = 3;
-            this.btn_exit.Size = new System.Drawing.Size(70, 55);
-            this.btn_exit.TabIndex = 1;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.pnlTitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTitleBar.Controls.Add(this.btnMinimize);
+            this.pnlTitleBar.Controls.Add(this.btnExit);
+            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitleBar.Name = "pnlTitleBar";
+            this.pnlTitleBar.Size = new System.Drawing.Size(2560, 65);
+            this.pnlTitleBar.TabIndex = 37;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.AnimationHoverSpeed = 0.07F;
+            this.btnMinimize.AnimationSpeed = 0.03F;
+            this.btnMinimize.BaseColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = global::CARES.Properties.Resources.min1;
+            this.btnMinimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMinimize.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnMinimize.Location = new System.Drawing.Point(2370, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.btnMinimize.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnMinimize.OnHoverImage = null;
+            this.btnMinimize.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMinimize.Size = new System.Drawing.Size(95, 65);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.AnimationHoverSpeed = 0.07F;
+            this.btnExit.AnimationSpeed = 0.03F;
+            this.btnExit.BaseColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Black;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::CARES.Properties.Resources.exit1;
+            this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnExit.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnExit.Location = new System.Drawing.Point(2465, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnExit.OnHoverImage = global::CARES.Properties.Resources.exit2;
+            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnExit.Size = new System.Drawing.Size(95, 65);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.Image = global::CARES.Properties.Resources.view;
+            this.btnView.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnView.Location = new System.Drawing.Point(686, 679);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2);
+            this.btnView.Name = "btnView";
+            this.btnView.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btnView.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnView.Size = new System.Drawing.Size(50, 50);
+            this.btnView.TabIndex = 26;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // btnHide
+            // 
+            this.btnHide.BackColor = System.Drawing.Color.White;
+            this.btnHide.Image = global::CARES.Properties.Resources.hide;
+            this.btnHide.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnHide.Location = new System.Drawing.Point(686, 679);
+            this.btnHide.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btnHide.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnHide.Size = new System.Drawing.Size(50, 50);
+            this.btnHide.TabIndex = 27;
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
             // 
             // gunaTransfarantPictureBox1
             // 
@@ -271,62 +332,13 @@
             this.gunaTransfarantPictureBox1.TabIndex = 0;
             this.gunaTransfarantPictureBox1.TabStop = false;
             // 
-            // gunaShadowPanel1
-            // 
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.btn_view1);
-            this.gunaShadowPanel1.Controls.Add(this.btn_hide1);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_create_account);
-            this.gunaShadowPanel1.Controls.Add(this.ll_signup);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_account);
-            this.gunaShadowPanel1.Controls.Add(this.txt_password);
-            this.gunaShadowPanel1.Controls.Add(this.btn_login);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_email_error);
-            this.gunaShadowPanel1.Controls.Add(this.txt_email);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_password);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_password_error);
-            this.gunaShadowPanel1.Controls.Add(this.lbl_email);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(111, 119);
-            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
-            this.gunaShadowPanel1.Radius = 3;
-            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(895, 1369);
-            this.gunaShadowPanel1.TabIndex = 36;
-            // 
-            // btn_view1
-            // 
-            this.btn_view1.BackColor = System.Drawing.Color.White;
-            this.btn_view1.Image = global::CARES.Properties.Resources.view;
-            this.btn_view1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_view1.Location = new System.Drawing.Point(686, 679);
-            this.btn_view1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_view1.Name = "btn_view1";
-            this.btn_view1.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btn_view1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_view1.Size = new System.Drawing.Size(50, 50);
-            this.btn_view1.TabIndex = 26;
-            this.btn_view1.Click += new System.EventHandler(this.btn_view1_Click);
-            // 
-            // btn_hide1
-            // 
-            this.btn_hide1.BackColor = System.Drawing.Color.White;
-            this.btn_hide1.Image = global::CARES.Properties.Resources.hide;
-            this.btn_hide1.ImageSize = new System.Drawing.Size(18, 18);
-            this.btn_hide1.Location = new System.Drawing.Point(686, 679);
-            this.btn_hide1.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_hide1.Name = "btn_hide1";
-            this.btn_hide1.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btn_hide1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btn_hide1.Size = new System.Drawing.Size(50, 50);
-            this.btn_hide1.TabIndex = 27;
-            this.btn_hide1.Click += new System.EventHandler(this.btn_hide1_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(2560, 1559);
+            this.ClientSize = new System.Drawing.Size(2560, 1600);
+            this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.gunaShadowPanel1);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -334,30 +346,32 @@
             this.Text = "log_in";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.gunaPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
+            this.pnlTitleBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaLabel lbl_password_error;
-        private Guna.UI.WinForms.GunaLabel lbl_email_error;
-        private Guna.UI.WinForms.GunaImageButton btn_view1;
-        private Guna.UI.WinForms.GunaImageButton btn_hide1;
-        private Guna.UI.WinForms.GunaTextBox txt_password;
-        private Guna.UI.WinForms.GunaTextBox txt_email;
-        private Guna.UI.WinForms.GunaLabel lbl_password;
-        private Guna.UI.WinForms.GunaLabel lbl_email;
-        private Guna.UI.WinForms.GunaLabel lbl_create_account;
-        private Guna.UI.WinForms.GunaButton btn_login;
-        private Guna.UI.WinForms.GunaLinkLabel ll_signup;
+        private Guna.UI.WinForms.GunaLabel lblPasswordError;
+        private Guna.UI.WinForms.GunaLabel lblEmailError;
+        private Guna.UI.WinForms.GunaImageButton btnView;
+        private Guna.UI.WinForms.GunaImageButton btnHide;
+        private Guna.UI.WinForms.GunaTextBox txtPassword;
+        private Guna.UI.WinForms.GunaTextBox txtEmail;
+        private Guna.UI.WinForms.GunaLabel lblPassword;
+        private Guna.UI.WinForms.GunaLabel lblEmail;
+        private Guna.UI.WinForms.GunaLabel lblCreateAccount;
+        private Guna.UI.WinForms.GunaButton btnLogin;
+        private Guna.UI.WinForms.GunaLinkLabel lnkSignup;
         private Guna.UI.WinForms.GunaLabel lbl_account;
         private Guna.UI.WinForms.GunaTransfarantPictureBox gunaTransfarantPictureBox1;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
-        private Guna.UI.WinForms.GunaButton btn_exit;
-        private Guna.UI.WinForms.GunaButton btn_minimize;
+        private System.Windows.Forms.Panel pnlTitleBar;
+        private Guna.UI.WinForms.GunaButton btnExit;
+        private Guna.UI.WinForms.GunaButton btnMinimize;
     }
 }

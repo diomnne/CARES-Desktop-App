@@ -19,32 +19,23 @@ namespace CARES
             InitializeComponent();
         }
 
-        private void btn_view1_Click(object sender, EventArgs e)
+        private void ll_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (txt_password.PasswordChar == '●')
-            {
-                btn_hide1.BringToFront();
-                txt_password.PasswordChar = '\0';
-            }
+            Signup s = new Signup();
+            s.Show();
+            this.Hide();
         }
 
-        private void btn_hide1_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
-            if (txt_password.PasswordChar == '\0')
-            {
-                btn_view1.BringToFront();
-                txt_password.PasswordChar = '●';
-            }
+
         }
 
-        private void btn_minimize_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to exit?", "Exit Confirmation",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
@@ -52,11 +43,22 @@ namespace CARES
             }
         }
 
-        private void ll_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnView_Click(object sender, EventArgs e)
         {
-            Signup s = new Signup();
-            s.Show();
-            this.Hide();
+            if (txtPassword.PasswordChar == '●')
+            {
+                btnHide.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnHide_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                btnView.BringToFront();
+                txtPassword.PasswordChar = '●';
+            }
         }
     }
 }
