@@ -161,6 +161,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnLogin.BorderColor = System.Drawing.Color.Black;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Image = null;
@@ -182,6 +183,7 @@
             // 
             this.lnkSignup.AutoSize = true;
             this.lnkSignup.BackColor = System.Drawing.Color.White;
+            this.lnkSignup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lnkSignup.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkSignup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.lnkSignup.Location = new System.Drawing.Point(559, 924);
@@ -295,6 +297,7 @@
             // btnView
             // 
             this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnView.Image = global::CARES.Properties.Resources.view;
             this.btnView.ImageSize = new System.Drawing.Size(18, 18);
             this.btnView.Location = new System.Drawing.Point(686, 679);
@@ -309,6 +312,7 @@
             // btnHide
             // 
             this.btnHide.BackColor = System.Drawing.Color.White;
+            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHide.Image = global::CARES.Properties.Resources.hide;
             this.btnHide.ImageSize = new System.Drawing.Size(18, 18);
             this.btnHide.Location = new System.Drawing.Point(686, 679);
