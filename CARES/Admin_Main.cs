@@ -21,7 +21,6 @@ namespace CARES
             InitializeComponent();
 
             leftBorderBtn = new GunaPanel();
-            //leftBorderBtn.Size = new Size(10, 130);
             leftBorderBtn.BackColor = Color.FromArgb(0, 157, 162);
             pnlNavbar.Controls.Add(leftBorderBtn);
         }

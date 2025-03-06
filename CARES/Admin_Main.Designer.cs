@@ -41,8 +41,10 @@
             this.btnDashboard = new Guna.UI.WinForms.GunaButton();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
             this.pnlTitleBar.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
+            this.pnlLogo.SuspendLayout();
             this.pnlFormContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +77,7 @@
             // 
             // pnlLogo
             // 
+            this.pnlLogo.Controls.Add(this.btnLogo);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
@@ -301,6 +304,18 @@
             this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnLogo
+            // 
+            this.btnLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogo.Image = global::CARES.Properties.Resources.online_doctor_concept_illustration;
+            this.btnLogo.ImageSize = new System.Drawing.Size(120, 120);
+            this.btnLogo.Location = new System.Drawing.Point(92, 22);
+            this.btnLogo.Name = "btnLogo";
+            this.btnLogo.OnHoverImage = null;
+            this.btnLogo.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnLogo.Size = new System.Drawing.Size(287, 104);
+            this.btnLogo.TabIndex = 0;
+            // 
             // Admin_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -317,6 +332,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlNavbar.ResumeLayout(false);
+            this.pnlLogo.ResumeLayout(false);
             this.pnlFormContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -337,5 +353,6 @@
         private Guna.UI.WinForms.GunaButton btnAccounts;
         private Guna.UI.WinForms.GunaButton btnLogTrail;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaImageButton btnLogo;
     }
 }
