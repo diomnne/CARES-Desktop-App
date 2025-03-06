@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CARES
 {
-    public partial class Dashboard_Admin : Form
+    public partial class Admin_Dashboard : Form
     {
-        public Dashboard_Admin()
+        public Admin_Dashboard()
         {
             InitializeComponent();
         }

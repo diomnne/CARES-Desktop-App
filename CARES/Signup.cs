@@ -139,7 +139,5 @@ namespace CARES
                 txtRepeatPass.PasswordChar = '●';
             }
         }
-
-        
     }
 }

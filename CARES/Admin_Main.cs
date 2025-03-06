@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace CARES
 {
-    public partial class Main_Admin : Form
+    public partial class Admin_Main : Form
     {
         private GunaButton currentBtn;
         private GunaPanel leftBorderBtn;
         
-        public Main_Admin()
+        public Admin_Main()
         {
             InitializeComponent();
 
@@ -40,7 +40,7 @@ namespace CARES
                 currentBtn.TextAlign = HorizontalAlignment.Center;
                 currentBtn.ImageAlign = HorizontalAlignment.Right;
 
-                leftBorderBtn.Size = new Size(10, currentBtn.Height);
+                leftBorderBtn.Size = new Size(8, currentBtn.Height);
 
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
@@ -52,7 +52,7 @@ namespace CARES
         {
             if(btn != null)
             {
-                btn.BackColor = Color.FromArgb(253, 253, 253);
+                btn.BackColor = Color.Transparent;
                 btn.TextAlign = HorizontalAlignment.Left;
                 btn.ImageAlign = HorizontalAlignment.Left;
             }
