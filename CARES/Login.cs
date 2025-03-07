@@ -15,9 +15,40 @@ namespace CARES
     public partial class Login : Form
     {
         string connectionString = "server=127.0.0.1;uid=root;pwd=20181024;database=cares_db";
+        private int failedAttempts = 0;
+        private System.Windows.Forms.Timer lockoutTimer;
+        private int lockoutDuration = 30;
         public Login()
         {
             InitializeComponent();
+            InitializeLockoutTimer();
+        }
+
+        private void InitializeLockoutTimer()
+        {
+            lockoutTimer = new System.Windows.Forms.Timer();
+            lockoutTimer.Interval = 1000;
+            lockoutTimer.Tick += LockoutTimer_Tick;
+        }
+
+        private void LockoutTimer_Tick(object sender, EventArgs e)
+        {
+            lockoutDuration--;
+            btnLogin.Text = $"Locked ({lockoutDuration}s)";
+            txtEmail.Enabled = false;
+            txtPassword.Enabled = false;
+
+            if (lockoutDuration <= 0)
+            {
+                lockoutTimer.Stop();
+                btnLogin.Enabled = true;
+                btnLogin.Text = "Log in";
+                txtEmail.Enabled = true;
+                txtPassword.Enabled = true;
+
+                failedAttempts = 0;  
+                lockoutDuration = 30;
+            }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -84,7 +115,7 @@ namespace CARES
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (!ValidateForm())
-                return; // Stop execution if validation fails
+                return; 
 
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
@@ -95,7 +126,6 @@ namespace CARES
                 {
                     conn.Open();
 
-                    // Step 1: Check if the email exists
                     string checkEmailQuery = "SELECT account_id, password, role FROM accounts WHERE email = @Email";
                     int accountId = -1;
                     string storedPassword = "";
@@ -121,15 +151,30 @@ namespace CARES
                         }
                     }
 
-                    // Step 2: Check if password is correct
-                    if (storedPassword != password) // Replace this with password hashing if needed
+                    if (storedPassword != password) 
                     {
-                        lblPasswordError.Text = "Incorrect password.";
+                        failedAttempts++;
+
+                        if (failedAttempts >= 3)
+                        {
+                            MessageBox.Show($"Too many failed attempts. Try again in {lockoutDuration} seconds.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            
+                            btnLogin.Enabled = false;
+                            txtEmail.Enabled = false;
+                            txtPassword.Enabled = false;
+
+                            lockoutTimer.Start();
+                            return;
+                        }
+
+                        lblPasswordError.Text = $"Incorrect password. {3 - failedAttempts} attempts left.";
                         lblPasswordError.Visible = true;
                         return;
                     }
 
-                    // Step 3: Log successful login
+                    failedAttempts = 0;
+                    
                     string logQuery = "INSERT INTO logs (account_id, action, description, time_stamp) VALUES (@AccountId, @Action, @Description, NOW())";
 
                     using (MySqlCommand logCmd = new MySqlCommand(logQuery, conn))
