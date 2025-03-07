@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new Guna.UI.WinForms.GunaButton();
+            this.btnExit = new Guna.UI.WinForms.GunaButton();
             this.pnlNavbar = new Guna.UI.WinForms.GunaPanel();
-            this.pnlLogo = new Guna.UI.WinForms.GunaPanel();
-            this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnInventory = new Guna.UI.WinForms.GunaButton();
             this.btnRecords = new Guna.UI.WinForms.GunaButton();
             this.btnSchedule = new Guna.UI.WinForms.GunaButton();
             this.btnAccounts = new Guna.UI.WinForms.GunaButton();
             this.btnLogTrail = new Guna.UI.WinForms.GunaButton();
             this.btnDashboard = new Guna.UI.WinForms.GunaButton();
-            this.btnMinimize = new Guna.UI.WinForms.GunaButton();
-            this.btnExit = new Guna.UI.WinForms.GunaButton();
+            this.pnlLogo = new Guna.UI.WinForms.GunaPanel();
             this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
+            this.pnlOuterContainer = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
             this.pnlTitleBar.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
             this.pnlLogo.SuspendLayout();
-            this.pnlFormContainer.SuspendLayout();
+            this.pnlOuterContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitleBar
@@ -58,6 +59,52 @@
             this.pnlTitleBar.Name = "pnlTitleBar";
             this.pnlTitleBar.Size = new System.Drawing.Size(2534, 65);
             this.pnlTitleBar.TabIndex = 38;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.AnimationHoverSpeed = 0.07F;
+            this.btnMinimize.AnimationSpeed = 0.03F;
+            this.btnMinimize.BaseColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = global::CARES.Properties.Resources.min1;
+            this.btnMinimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMinimize.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnMinimize.Location = new System.Drawing.Point(2344, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMinimize.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnMinimize.OnHoverImage = null;
+            this.btnMinimize.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMinimize.Size = new System.Drawing.Size(95, 65);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.AnimationHoverSpeed = 0.07F;
+            this.btnExit.AnimationSpeed = 0.03F;
+            this.btnExit.BaseColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Black;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::CARES.Properties.Resources.exit1;
+            this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnExit.ImageSize = new System.Drawing.Size(11, 11);
+            this.btnExit.Location = new System.Drawing.Point(2439, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnExit.OnHoverImage = global::CARES.Properties.Resources.exit2;
+            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
+            this.btnExit.Size = new System.Drawing.Size(95, 65);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pnlNavbar
             // 
@@ -74,33 +121,6 @@
             this.pnlNavbar.Name = "pnlNavbar";
             this.pnlNavbar.Size = new System.Drawing.Size(480, 1464);
             this.pnlNavbar.TabIndex = 39;
-            // 
-            // pnlLogo
-            // 
-            this.pnlLogo.Controls.Add(this.btnLogo);
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(480, 150);
-            this.pnlLogo.TabIndex = 0;
-            // 
-            // pnlFormContainer
-            // 
-            this.pnlFormContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.pnlFormContainer.Controls.Add(this.gunaPanel1);
-            this.pnlFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormContainer.Location = new System.Drawing.Point(480, 65);
-            this.pnlFormContainer.Name = "pnlFormContainer";
-            this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1464);
-            this.pnlFormContainer.TabIndex = 40;
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(2054, 150);
-            this.gunaPanel1.TabIndex = 1;
             // 
             // btnInventory
             // 
@@ -258,51 +278,14 @@
             this.btnDashboard.TextOffsetX = 10;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // btnMinimize
+            // pnlLogo
             // 
-            this.btnMinimize.AnimationHoverSpeed = 0.07F;
-            this.btnMinimize.AnimationSpeed = 0.03F;
-            this.btnMinimize.BaseColor = System.Drawing.Color.Transparent;
-            this.btnMinimize.BorderColor = System.Drawing.Color.Black;
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Image = global::CARES.Properties.Resources.min1;
-            this.btnMinimize.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMinimize.ImageSize = new System.Drawing.Size(11, 11);
-            this.btnMinimize.Location = new System.Drawing.Point(2344, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
-            this.btnMinimize.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMinimize.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMinimize.OnHoverImage = null;
-            this.btnMinimize.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMinimize.Size = new System.Drawing.Size(95, 65);
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.AnimationHoverSpeed = 0.07F;
-            this.btnExit.AnimationSpeed = 0.03F;
-            this.btnExit.BaseColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Black;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = global::CARES.Properties.Resources.exit1;
-            this.btnExit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnExit.ImageSize = new System.Drawing.Size(11, 11);
-            this.btnExit.Location = new System.Drawing.Point(2439, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.OnHoverBaseColor = System.Drawing.Color.Red;
-            this.btnExit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnExit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnExit.OnHoverImage = global::CARES.Properties.Resources.exit2;
-            this.btnExit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnExit.Size = new System.Drawing.Size(95, 65);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.pnlLogo.Controls.Add(this.btnLogo);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(480, 150);
+            this.pnlLogo.TabIndex = 0;
             // 
             // btnLogo
             // 
@@ -316,13 +299,41 @@
             this.btnLogo.Size = new System.Drawing.Size(287, 104);
             this.btnLogo.TabIndex = 0;
             // 
+            // pnlOuterContainer
+            // 
+            this.pnlOuterContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.pnlOuterContainer.Controls.Add(this.pnlFormContainer);
+            this.pnlOuterContainer.Controls.Add(this.gunaPanel1);
+            this.pnlOuterContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlOuterContainer.Location = new System.Drawing.Point(480, 65);
+            this.pnlOuterContainer.Name = "pnlOuterContainer";
+            this.pnlOuterContainer.Size = new System.Drawing.Size(2054, 1464);
+            this.pnlOuterContainer.TabIndex = 40;
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(2054, 150);
+            this.gunaPanel1.TabIndex = 1;
+            // 
+            // pnlFormContainer
+            // 
+            this.pnlFormContainer.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlFormContainer.Location = new System.Drawing.Point(0, 150);
+            this.pnlFormContainer.Name = "pnlFormContainer";
+            this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1314);
+            this.pnlFormContainer.TabIndex = 2;
+            // 
             // Admin_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(2534, 1529);
-            this.Controls.Add(this.pnlFormContainer);
+            this.Controls.Add(this.pnlOuterContainer);
             this.Controls.Add(this.pnlNavbar);
             this.Controls.Add(this.pnlTitleBar);
             this.DoubleBuffered = true;
@@ -333,7 +344,7 @@
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlNavbar.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
-            this.pnlFormContainer.ResumeLayout(false);
+            this.pnlOuterContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -346,7 +357,7 @@
         private Guna.UI.WinForms.GunaPanel pnlNavbar;
         private Guna.UI.WinForms.GunaButton btnDashboard;
         private Guna.UI.WinForms.GunaPanel pnlLogo;
-        private Guna.UI.WinForms.GunaPanel pnlFormContainer;
+        private Guna.UI.WinForms.GunaPanel pnlOuterContainer;
         private Guna.UI.WinForms.GunaButton btnInventory;
         private Guna.UI.WinForms.GunaButton btnRecords;
         private Guna.UI.WinForms.GunaButton btnSchedule;
@@ -354,5 +365,6 @@
         private Guna.UI.WinForms.GunaButton btnLogTrail;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaImageButton btnLogo;
+        private Guna.UI.WinForms.GunaPanel pnlFormContainer;
     }
 }

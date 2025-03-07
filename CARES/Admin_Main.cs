@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static CARES.FormMethods;
 
 namespace CARES
 {
@@ -75,6 +76,7 @@ namespace CARES
         private void btnLogTrail_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            LoadChildForm(this, new Admin_LogTrail(), pnlFormContainer);
         }
 
         private void btnAccounts_Click(object sender, EventArgs e)
