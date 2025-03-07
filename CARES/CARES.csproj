@@ -121,6 +121,12 @@
     <Compile Include="Admin_LogTrail.Designer.cs">
       <DependentUpon>Admin_LogTrail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctor_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Main.Designer.cs">
+      <DependentUpon>Doctor_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,30 @@
       <DependentUpon>Admin_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Methods.cs" />
+    <Compile Include="MIH_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIH_Main.Designer.cs">
+      <DependentUpon>MIH_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRO_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRO_Main.Designer.cs">
+      <DependentUpon>MRO_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nurse_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nurse_Main.Designer.cs">
+      <DependentUpon>Nurse_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Main.Designer.cs">
+      <DependentUpon>Patient_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,11 +178,26 @@
     <EmbeddedResource Include="Admin_LogTrail.resx">
       <DependentUpon>Admin_LogTrail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Main.resx">
+      <DependentUpon>Doctor_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Main.resx">
       <DependentUpon>Admin_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIH_Main.resx">
+      <DependentUpon>MIH_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRO_Main.resx">
+      <DependentUpon>MRO_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurse_Main.resx">
+      <DependentUpon>Nurse_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Main.resx">
+      <DependentUpon>Patient_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>

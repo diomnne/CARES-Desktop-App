@@ -14,16 +14,10 @@ namespace CARES
 {
     public partial class Login : Form
     {
+        string connectionString = "server=127.0.0.1;uid=root;pwd=20181024;database=cares_db";
         public Login()
         {
             InitializeComponent();
-        }
-
-        private void ll_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Signup s = new Signup();
-            s.Show();
-            this.Hide();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -52,6 +46,145 @@ namespace CARES
                 btnView.BringToFront();
                 txtPassword.PasswordChar = '●';
             }
+        }
+
+        private bool ValidateForm()
+        {
+            bool isValid = true;
+
+            // Reset error messages
+            lblEmailError.Visible = false;
+            lblPasswordError.Visible = false;
+
+            // Validate Email
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                lblEmailError.Text = "This is a required field.";
+                lblEmailError.Visible = true;
+                isValid = false;
+            }
+            else if (!txtEmail.Text.Contains("@") || !txtEmail.Text.Contains("."))
+            {
+                lblEmailError.Text = "Enter a valid email address.";
+                lblEmailError.Visible = true;
+                isValid = false;
+            }
+
+            // Validate Password
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                lblPasswordError.Text = "This is a required field.";
+                lblPasswordError.Visible = true;
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (!ValidateForm())
+                return; // Stop execution if validation fails
+
+            string email = txtEmail.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // Step 1: Check if the email exists
+                    string checkEmailQuery = "SELECT account_id, password, role FROM accounts WHERE email = @Email";
+                    int accountId = -1;
+                    string storedPassword = "";
+                    string role = "";
+
+                    using (MySqlCommand checkEmailCmd = new MySqlCommand(checkEmailQuery, conn))
+                    {
+                        checkEmailCmd.Parameters.AddWithValue("@Email", email);
+                        using (MySqlDataReader reader = checkEmailCmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                accountId = reader.GetInt32("account_id");
+                                storedPassword = reader.GetString("password");
+                                role = reader.GetString("role");
+                            }
+                            else
+                            {
+                                lblEmailError.Text = "Account does not exist.";
+                                lblEmailError.Visible = true;
+                                return;
+                            }
+                        }
+                    }
+
+                    // Step 2: Check if password is correct
+                    if (storedPassword != password) // Replace this with password hashing if needed
+                    {
+                        lblPasswordError.Text = "Incorrect password.";
+                        lblPasswordError.Visible = true;
+                        return;
+                    }
+
+                    // Step 3: Log successful login
+                    string logQuery = "INSERT INTO logs (account_id, action, description, time_stamp) VALUES (@AccountId, @Action, @Description, NOW())";
+
+                    using (MySqlCommand logCmd = new MySqlCommand(logQuery, conn))
+                    {
+                        logCmd.Parameters.AddWithValue("@AccountId", accountId);
+                        logCmd.Parameters.AddWithValue("@Action", "Login");
+                        logCmd.Parameters.AddWithValue("@Description", $"User {email} logged in as {role}");
+                        logCmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Form f = null;
+
+                    switch (role.ToLower())
+                    {
+                        case "admin":
+                            f = new Admin_Main();
+                            break;
+                        case "doctor":
+                            f = new Doctor_Main();
+                            break;
+                        case "nurse":
+                            f = new Nurse_Main();
+                            break;
+                        case "medical records officer":
+                            f = new MRO_Main();
+                            break;
+                        case "medicine inventory handler":
+                            f = new MIH_Main();
+                            break;
+                        case "patient":
+                            f = new Patient_Main();
+                            break;
+                        default:
+                            MessageBox.Show("Unknown role detected. Please contact support.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                    }
+
+                    f.Show();
+                    this.Hide();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void lnkSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Signup s = new Signup();
+            s.Show();
+            this.Hide();
         }
     }
 }
