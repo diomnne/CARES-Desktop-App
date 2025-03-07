@@ -39,17 +39,17 @@
             this.lnkSignup = new Guna.UI.WinForms.GunaLinkLabel();
             this.lbl_account = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.btnView = new Guna.UI.WinForms.GunaImageButton();
+            this.btnHide = new Guna.UI.WinForms.GunaImageButton();
             this.pnlTitleBar = new System.Windows.Forms.Panel();
             this.btnMinimize = new Guna.UI.WinForms.GunaButton();
             this.btnExit = new Guna.UI.WinForms.GunaButton();
-            this.btnView = new Guna.UI.WinForms.GunaImageButton();
-            this.btnHide = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaTransfarantPictureBox1 = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.gunaShadowPanel1.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPasswordError
@@ -178,6 +178,7 @@
             this.btnLogin.TabIndex = 33;
             this.btnLogin.Text = "Log in";
             this.btnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lnkSignup
             // 
@@ -192,7 +193,7 @@
             this.lnkSignup.TabIndex = 35;
             this.lnkSignup.TabStop = true;
             this.lnkSignup.Text = "Sign up";
-            this.lnkSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_signup_LinkClicked);
+            this.lnkSignup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSignup_LinkClicked);
             // 
             // lbl_account
             // 
@@ -215,6 +216,18 @@
             this.gunaPanel1.Size = new System.Drawing.Size(1540, 1535);
             this.gunaPanel1.TabIndex = 34;
             // 
+            // gunaTransfarantPictureBox1
+            // 
+            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransfarantPictureBox1.Image = global::CARES.Properties.Resources.hand_drawn_hospital_reception_scene_with_people_wearing_face_masks;
+            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(1, 302);
+            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
+            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(1540, 1026);
+            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaTransfarantPictureBox1.TabIndex = 0;
+            this.gunaTransfarantPictureBox1.TabStop = false;
+            // 
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
@@ -236,6 +249,36 @@
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
             this.gunaShadowPanel1.Size = new System.Drawing.Size(895, 1329);
             this.gunaShadowPanel1.TabIndex = 36;
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnView.Image = global::CARES.Properties.Resources.view;
+            this.btnView.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnView.Location = new System.Drawing.Point(686, 679);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2);
+            this.btnView.Name = "btnView";
+            this.btnView.OnHoverImage = global::CARES.Properties.Resources.view_hover;
+            this.btnView.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnView.Size = new System.Drawing.Size(50, 50);
+            this.btnView.TabIndex = 26;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // btnHide
+            // 
+            this.btnHide.BackColor = System.Drawing.Color.White;
+            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHide.Image = global::CARES.Properties.Resources.hide;
+            this.btnHide.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnHide.Location = new System.Drawing.Point(686, 679);
+            this.btnHide.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
+            this.btnHide.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnHide.Size = new System.Drawing.Size(50, 50);
+            this.btnHide.TabIndex = 27;
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
             // 
             // pnlTitleBar
             // 
@@ -294,48 +337,6 @@
             this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnView
-            // 
-            this.btnView.BackColor = System.Drawing.Color.White;
-            this.btnView.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnView.Image = global::CARES.Properties.Resources.view;
-            this.btnView.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnView.Location = new System.Drawing.Point(686, 679);
-            this.btnView.Margin = new System.Windows.Forms.Padding(2);
-            this.btnView.Name = "btnView";
-            this.btnView.OnHoverImage = global::CARES.Properties.Resources.view_hover;
-            this.btnView.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btnView.Size = new System.Drawing.Size(50, 50);
-            this.btnView.TabIndex = 26;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // btnHide
-            // 
-            this.btnHide.BackColor = System.Drawing.Color.White;
-            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHide.Image = global::CARES.Properties.Resources.hide;
-            this.btnHide.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnHide.Location = new System.Drawing.Point(686, 679);
-            this.btnHide.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.OnHoverImage = global::CARES.Properties.Resources.hide_hover;
-            this.btnHide.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btnHide.Size = new System.Drawing.Size(50, 50);
-            this.btnHide.TabIndex = 27;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
-            // 
-            // gunaTransfarantPictureBox1
-            // 
-            this.gunaTransfarantPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTransfarantPictureBox1.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransfarantPictureBox1.Image = global::CARES.Properties.Resources.hand_drawn_hospital_reception_scene_with_people_wearing_face_masks;
-            this.gunaTransfarantPictureBox1.Location = new System.Drawing.Point(1, 302);
-            this.gunaTransfarantPictureBox1.Name = "gunaTransfarantPictureBox1";
-            this.gunaTransfarantPictureBox1.Size = new System.Drawing.Size(1540, 1026);
-            this.gunaTransfarantPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaTransfarantPictureBox1.TabIndex = 0;
-            this.gunaTransfarantPictureBox1.TabStop = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -350,10 +351,10 @@
             this.Text = "log_in";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.gunaPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             this.pnlTitleBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaTransfarantPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
