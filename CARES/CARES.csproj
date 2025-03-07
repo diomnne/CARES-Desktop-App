@@ -139,7 +139,7 @@
     <Compile Include="Admin_Main.Designer.cs">
       <DependentUpon>Admin_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Methods.cs" />
+    <Compile Include="FormMethods.cs" />
     <Compile Include="MIH_Main.cs">
       <SubType>Form</SubType>
     </Compile>
