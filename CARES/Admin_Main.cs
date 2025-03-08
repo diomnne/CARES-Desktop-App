@@ -20,10 +20,6 @@ namespace CARES
         public Admin_Main()
         {
             InitializeComponent();
-
-            leftBorderBtn = new GunaPanel();
-            leftBorderBtn.BackColor = Color.FromArgb(0, 157, 162);
-            pnlNavbar.Controls.Add(leftBorderBtn);
         }
 
         private void ActivateButton(object sender)
@@ -36,15 +32,10 @@ namespace CARES
                 }
 
                 currentBtn = (GunaButton)sender;
-                currentBtn.BackColor = Color.FromArgb(216, 237, 236);
-                currentBtn.TextAlign = HorizontalAlignment.Center;
-                currentBtn.ImageAlign = HorizontalAlignment.Right;
+                currentBtn.BaseColor = Color.FromArgb(255, 247, 247); //lightblue 216, 237, 236 lightpink 255, 247, 247
 
-                leftBorderBtn.Size = new Size(8, currentBtn.Height);
-
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                currentBtn.Radius = 7;
+                currentBtn.Size = new Size(currentBtn.Width, currentBtn.Height);
             }
         }
 
@@ -52,9 +43,8 @@ namespace CARES
         {
             if(btn != null)
             {
-                btn.BackColor = Color.Transparent;
-                btn.TextAlign = HorizontalAlignment.Left;
-                btn.ImageAlign = HorizontalAlignment.Left;
+                btn.BaseColor = Color.Transparent;
+                //btn.Radius = 7;
             }
         }
 
@@ -71,6 +61,7 @@ namespace CARES
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            LoadChildForm(this, new Admin_Dashboard(), pnlFormContainer);
         }
 
         private void btnLogTrail_Click(object sender, EventArgs e)

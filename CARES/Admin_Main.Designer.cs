@@ -42,7 +42,6 @@
             this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
             this.pnlOuterContainer = new Guna.UI.WinForms.GunaPanel();
             this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.pnlTitleBar.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -119,6 +118,7 @@
             this.pnlNavbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNavbar.Location = new System.Drawing.Point(0, 65);
             this.pnlNavbar.Name = "pnlNavbar";
+            this.pnlNavbar.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.pnlNavbar.Size = new System.Drawing.Size(480, 1464);
             this.pnlNavbar.TabIndex = 39;
             // 
@@ -135,14 +135,16 @@
             this.btnInventory.Image = global::CARES.Properties.Resources.medicineIcon;
             this.btnInventory.ImageOffsetX = 10;
             this.btnInventory.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnInventory.Location = new System.Drawing.Point(0, 800);
+            this.btnInventory.Location = new System.Drawing.Point(25, 750);
+            this.btnInventory.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnInventory.Name = "btnInventory";
-            this.btnInventory.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnInventory.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnInventory.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnInventory.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnInventory.OnHoverImage = null;
-            this.btnInventory.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnInventory.Size = new System.Drawing.Size(480, 130);
+            this.btnInventory.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnInventory.Radius = 7;
+            this.btnInventory.Size = new System.Drawing.Size(430, 120);
             this.btnInventory.TabIndex = 10;
             this.btnInventory.Text = "Medicine Inventory";
             this.btnInventory.TextOffsetX = 10;
@@ -161,14 +163,16 @@
             this.btnRecords.Image = global::CARES.Properties.Resources.recordsIcon;
             this.btnRecords.ImageOffsetX = 10;
             this.btnRecords.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnRecords.Location = new System.Drawing.Point(0, 670);
+            this.btnRecords.Location = new System.Drawing.Point(25, 630);
+            this.btnRecords.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnRecords.Name = "btnRecords";
-            this.btnRecords.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnRecords.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnRecords.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnRecords.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnRecords.OnHoverImage = null;
-            this.btnRecords.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnRecords.Size = new System.Drawing.Size(480, 130);
+            this.btnRecords.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnRecords.Radius = 7;
+            this.btnRecords.Size = new System.Drawing.Size(430, 120);
             this.btnRecords.TabIndex = 9;
             this.btnRecords.Text = "Medical Records";
             this.btnRecords.TextOffsetX = 10;
@@ -187,14 +191,16 @@
             this.btnSchedule.Image = global::CARES.Properties.Resources.scheduleIcon;
             this.btnSchedule.ImageOffsetX = 10;
             this.btnSchedule.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnSchedule.Location = new System.Drawing.Point(0, 540);
+            this.btnSchedule.Location = new System.Drawing.Point(25, 510);
+            this.btnSchedule.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnSchedule.Name = "btnSchedule";
-            this.btnSchedule.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnSchedule.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnSchedule.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnSchedule.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnSchedule.OnHoverImage = null;
-            this.btnSchedule.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnSchedule.Size = new System.Drawing.Size(480, 130);
+            this.btnSchedule.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnSchedule.Radius = 7;
+            this.btnSchedule.Size = new System.Drawing.Size(430, 120);
             this.btnSchedule.TabIndex = 8;
             this.btnSchedule.Text = "Consultation Schedule";
             this.btnSchedule.TextOffsetX = 10;
@@ -213,14 +219,16 @@
             this.btnAccounts.Image = global::CARES.Properties.Resources.accountsIcon;
             this.btnAccounts.ImageOffsetX = 10;
             this.btnAccounts.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnAccounts.Location = new System.Drawing.Point(0, 410);
+            this.btnAccounts.Location = new System.Drawing.Point(25, 390);
+            this.btnAccounts.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnAccounts.Name = "btnAccounts";
-            this.btnAccounts.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnAccounts.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnAccounts.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnAccounts.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnAccounts.OnHoverImage = null;
-            this.btnAccounts.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnAccounts.Size = new System.Drawing.Size(480, 130);
+            this.btnAccounts.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnAccounts.Radius = 7;
+            this.btnAccounts.Size = new System.Drawing.Size(430, 120);
             this.btnAccounts.TabIndex = 7;
             this.btnAccounts.Text = "Manage Accounts";
             this.btnAccounts.TextOffsetX = 10;
@@ -239,14 +247,16 @@
             this.btnLogTrail.Image = global::CARES.Properties.Resources.logsIcon;
             this.btnLogTrail.ImageOffsetX = 10;
             this.btnLogTrail.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnLogTrail.Location = new System.Drawing.Point(0, 280);
+            this.btnLogTrail.Location = new System.Drawing.Point(25, 270);
+            this.btnLogTrail.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnLogTrail.Name = "btnLogTrail";
-            this.btnLogTrail.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnLogTrail.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnLogTrail.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnLogTrail.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnLogTrail.OnHoverImage = null;
-            this.btnLogTrail.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnLogTrail.Size = new System.Drawing.Size(480, 130);
+            this.btnLogTrail.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnLogTrail.Radius = 7;
+            this.btnLogTrail.Size = new System.Drawing.Size(430, 120);
             this.btnLogTrail.TabIndex = 6;
             this.btnLogTrail.Text = "Log Trail";
             this.btnLogTrail.TextOffsetX = 10;
@@ -265,14 +275,16 @@
             this.btnDashboard.Image = global::CARES.Properties.Resources.dashIcon;
             this.btnDashboard.ImageOffsetX = 10;
             this.btnDashboard.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnDashboard.Location = new System.Drawing.Point(0, 150);
+            this.btnDashboard.Location = new System.Drawing.Point(25, 150);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(237)))), ((int)(((byte)(236)))));
+            this.btnDashboard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.btnDashboard.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnDashboard.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
             this.btnDashboard.OnHoverImage = null;
-            this.btnDashboard.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnDashboard.Size = new System.Drawing.Size(480, 130);
+            this.btnDashboard.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnDashboard.Radius = 7;
+            this.btnDashboard.Size = new System.Drawing.Size(430, 120);
             this.btnDashboard.TabIndex = 5;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextOffsetX = 10;
@@ -282,9 +294,9 @@
             // 
             this.pnlLogo.Controls.Add(this.btnLogo);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Location = new System.Drawing.Point(25, 0);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(480, 150);
+            this.pnlLogo.Size = new System.Drawing.Size(430, 150);
             this.pnlLogo.TabIndex = 0;
             // 
             // btnLogo
@@ -303,7 +315,6 @@
             // 
             this.pnlOuterContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.pnlOuterContainer.Controls.Add(this.pnlFormContainer);
-            this.pnlOuterContainer.Controls.Add(this.gunaPanel1);
             this.pnlOuterContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlOuterContainer.Location = new System.Drawing.Point(480, 65);
             this.pnlOuterContainer.Name = "pnlOuterContainer";
@@ -314,18 +325,10 @@
             // 
             this.pnlFormContainer.BackColor = System.Drawing.Color.Transparent;
             this.pnlFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormContainer.Location = new System.Drawing.Point(0, 150);
+            this.pnlFormContainer.Location = new System.Drawing.Point(0, 0);
             this.pnlFormContainer.Name = "pnlFormContainer";
-            this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1314);
+            this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1464);
             this.pnlFormContainer.TabIndex = 2;
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(2054, 150);
-            this.gunaPanel1.TabIndex = 1;
             // 
             // Admin_Main
             // 
@@ -363,7 +366,6 @@
         private Guna.UI.WinForms.GunaButton btnSchedule;
         private Guna.UI.WinForms.GunaButton btnAccounts;
         private Guna.UI.WinForms.GunaButton btnLogTrail;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaImageButton btnLogo;
         private Guna.UI.WinForms.GunaPanel pnlFormContainer;
     }
