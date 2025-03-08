@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using static CARES.FormMethods;
 
 namespace CARES
@@ -50,7 +51,7 @@ namespace CARES
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
