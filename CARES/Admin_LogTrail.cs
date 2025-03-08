@@ -44,11 +44,11 @@ namespace CARES
                     dtgLogTrail.Columns["time_stamp"].HeaderText = "Time Stamp";
 
                     // Adjust column width
-                    dtgLogTrail.Columns["log_id"].Width = 35;
-                    dtgLogTrail.Columns["account_id"].Width = 36;
-                    dtgLogTrail.Columns["action"].Width = 40;
+                    dtgLogTrail.Columns["log_id"].Width = 34;
+                    dtgLogTrail.Columns["account_id"].Width = 35;
+                    dtgLogTrail.Columns["action"].Width = 43;
                     dtgLogTrail.Columns["description"].Width = 200;
-                    dtgLogTrail.Columns["time_stamp"].Width = 180;
+                    dtgLogTrail.Columns["time_stamp"].Width = 150;
 
                 }
                 catch (Exception ex)
@@ -58,6 +58,9 @@ namespace CARES
             }
         }
 
-
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }
