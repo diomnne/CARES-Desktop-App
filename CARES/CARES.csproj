@@ -276,6 +276,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\refreshIcon1.png" />
     <None Include="Resources\dashIcon.png" />
     <None Include="Resources\dashboardIcon.png" />
     <None Include="Resources\logsIcon.png" />

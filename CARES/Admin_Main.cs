@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using static CARES.FormMethods;
 
 namespace CARES
@@ -20,10 +21,6 @@ namespace CARES
         public Admin_Main()
         {
             InitializeComponent();
-
-            leftBorderBtn = new GunaPanel();
-            leftBorderBtn.BackColor = Color.FromArgb(0, 157, 162);
-            pnlNavbar.Controls.Add(leftBorderBtn);
         }
 
         private void ActivateButton(object sender)
@@ -36,16 +33,10 @@ namespace CARES
                 }
 
                 currentBtn = (GunaButton)sender;
-                currentBtn.BackColor = Color.FromArgb(216, 237, 236);
-                currentBtn.TextAlign = HorizontalAlignment.Center;
-                currentBtn.ImageAlign = HorizontalAlignment.Right;
-                currentBtn.Font = new Font(currentBtn.Font.FontFamily, currentBtn.Font.Size, FontStyle.Bold);
+                currentBtn.BaseColor = Color.FromArgb(255, 247, 247); //lightblue 216, 237, 236 lightpink 255, 247, 247
 
-                leftBorderBtn.Size = new Size(8, currentBtn.Height);
-
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                currentBtn.Radius = 7;
+                currentBtn.Size = new Size(currentBtn.Width, currentBtn.Height);
             }
         }
 
@@ -53,16 +44,14 @@ namespace CARES
         {
             if(btn != null)
             {
-                btn.BackColor = Color.Transparent;
-                btn.TextAlign = HorizontalAlignment.Left;
-                btn.ImageAlign = HorizontalAlignment.Left;
-                currentBtn.Font = new Font(currentBtn.Font.FontFamily, currentBtn.Font.Size, FontStyle.Regular);
+                btn.BaseColor = Color.Transparent;
+                //btn.Radius = 7;
             }
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -73,6 +62,7 @@ namespace CARES
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            LoadChildForm(this, new Admin_Dashboard(), pnlFormContainer);
         }
 
         private void btnLogTrail_Click(object sender, EventArgs e)
