@@ -39,6 +39,7 @@ namespace CARES
                 currentBtn.BackColor = Color.FromArgb(216, 237, 236);
                 currentBtn.TextAlign = HorizontalAlignment.Center;
                 currentBtn.ImageAlign = HorizontalAlignment.Right;
+                currentBtn.Font = new Font(currentBtn.Font.FontFamily, currentBtn.Font.Size, FontStyle.Bold);
 
                 leftBorderBtn.Size = new Size(8, currentBtn.Height);
 
@@ -55,6 +56,7 @@ namespace CARES
                 btn.BackColor = Color.Transparent;
                 btn.TextAlign = HorizontalAlignment.Left;
                 btn.ImageAlign = HorizontalAlignment.Left;
+                currentBtn.Font = new Font(currentBtn.Font.FontFamily, currentBtn.Font.Size, FontStyle.Regular);
             }
         }
 

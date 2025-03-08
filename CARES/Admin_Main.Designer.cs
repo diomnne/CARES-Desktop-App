@@ -41,8 +41,8 @@
             this.pnlLogo = new Guna.UI.WinForms.GunaPanel();
             this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
             this.pnlOuterContainer = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.pnlTitleBar.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -108,7 +108,7 @@
             // 
             // pnlNavbar
             // 
-            this.pnlNavbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.pnlNavbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
             this.pnlNavbar.Controls.Add(this.btnInventory);
             this.pnlNavbar.Controls.Add(this.btnRecords);
             this.pnlNavbar.Controls.Add(this.btnSchedule);
@@ -310,14 +310,6 @@
             this.pnlOuterContainer.Size = new System.Drawing.Size(2054, 1464);
             this.pnlOuterContainer.TabIndex = 40;
             // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(2054, 150);
-            this.gunaPanel1.TabIndex = 1;
-            // 
             // pnlFormContainer
             // 
             this.pnlFormContainer.BackColor = System.Drawing.Color.Transparent;
@@ -326,6 +318,14 @@
             this.pnlFormContainer.Name = "pnlFormContainer";
             this.pnlFormContainer.Size = new System.Drawing.Size(2054, 1314);
             this.pnlFormContainer.TabIndex = 2;
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(2054, 150);
+            this.gunaPanel1.TabIndex = 1;
             // 
             // Admin_Main
             // 
