@@ -43,9 +43,11 @@
             this.pnlFooter = new Guna.UI.WinForms.GunaLinePanel();
             this.lblCopyright = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
             this.pnlNavbar.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.pnlOuterContainer.SuspendLayout();
+            this.pnlFooter.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -290,10 +292,10 @@
             // 
             // pnlFooter
             // 
+            this.pnlFooter.Controls.Add(this.gunaLinkLabel1);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlFooter.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.pnlFooter.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.pnlFooter.LineTop = 1;
             this.pnlFooter.Location = new System.Drawing.Point(0, 1379);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(2034, 150);
@@ -304,7 +306,7 @@
             this.lblCopyright.AutoSize = true;
             this.lblCopyright.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCopyright.ForeColor = System.Drawing.Color.RosyBrown;
-            this.lblCopyright.Location = new System.Drawing.Point(32, 0);
+            this.lblCopyright.Location = new System.Drawing.Point(31, 0);
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(205, 30);
             this.lblCopyright.TabIndex = 11;
@@ -319,6 +321,18 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(450, 150);
             this.gunaPanel1.TabIndex = 12;
+            // 
+            // gunaLinkLabel1
+            // 
+            this.gunaLinkLabel1.AutoSize = true;
+            this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaLinkLabel1.Location = new System.Drawing.Point(810, 48);
+            this.gunaLinkLabel1.Name = "gunaLinkLabel1";
+            this.gunaLinkLabel1.Size = new System.Drawing.Size(79, 32);
+            this.gunaLinkLabel1.TabIndex = 0;
+            this.gunaLinkLabel1.TabStop = true;
+            this.gunaLinkLabel1.Text = "About";
             // 
             // Admin_Main
             // 
@@ -335,6 +349,8 @@
             this.pnlNavbar.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlOuterContainer.ResumeLayout(false);
+            this.pnlFooter.ResumeLayout(false);
+            this.pnlFooter.PerformLayout();
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -357,5 +373,6 @@
         private Guna.UI.WinForms.GunaLinePanel pnlFooter;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaLabel lblCopyright;
+        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
     }
 }
