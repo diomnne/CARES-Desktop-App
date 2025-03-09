@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using static CARES.FormMethods;
 
 namespace CARES
@@ -21,6 +20,9 @@ namespace CARES
         public Admin_Main()
         {
             InitializeComponent();
+
+            ActivateButton(btnDashboard);
+            LoadChildForm(this, new Admin_Dashboard(), pnlFormContainer);
         }
 
         private void ActivateButton(object sender)
@@ -47,16 +49,6 @@ namespace CARES
                 btn.BaseColor = Color.Transparent;
                 //btn.Radius = 7;
             }
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
