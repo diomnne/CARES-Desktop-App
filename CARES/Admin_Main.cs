@@ -63,9 +63,10 @@ namespace CARES
             LoadChildForm(this, new Admin_LogTrail(), pnlFormContainer);
         }
 
-        private void btnAccounts_Click(object sender, EventArgs e)
+        private void btnUsers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            LoadChildForm(this, new Admin_ManageUsers(), pnlFormContainer);
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
@@ -82,5 +83,6 @@ namespace CARES
         {
             ActivateButton(sender);
         }
+
     }
 }
