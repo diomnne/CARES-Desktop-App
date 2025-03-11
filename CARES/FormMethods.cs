@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Guna.UI.WinForms;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace CARES
 {
@@ -20,21 +23,39 @@ namespace CARES
                 }
             }
 
-            /*childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            containerPanel.Controls.Add(childForm);
-            containerPanel.Tag = childForm;
-            childForm.Show();*/
-
-            containerPanel.Controls.Clear(); // Remove any existing child forms
+            containerPanel.Controls.Clear();
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill; // Ensure it fills the panel
+            childForm.Dock = DockStyle.Fill; 
             containerPanel.Controls.Add(childForm);
             childForm.Show();
         }
+
+        private static GunaButton currentBtn;
+
+        public static void ActivateButton(object sender, Color activeColor)
+        {
+            if (sender is GunaButton btn)
+            {
+                if (currentBtn != null)
+                {
+                    DisableButton(currentBtn);
+                }
+
+                currentBtn = btn;
+                currentBtn.BaseColor = activeColor; 
+                currentBtn.Size = new Size(currentBtn.Width, currentBtn.Height);
+            }
+        }
+
+        public static void DisableButton(GunaButton btn)
+        {
+            if (btn != null)
+            {
+                btn.BaseColor = Color.Transparent;
+            }
+        }
+
     }
 }
 

@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.pnlNavbar = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.lblCopyright = new Guna.UI.WinForms.GunaLabel();
             this.btnInventory = new Guna.UI.WinForms.GunaButton();
             this.btnRecords = new Guna.UI.WinForms.GunaButton();
             this.btnSchedule = new Guna.UI.WinForms.GunaButton();
-            this.btnAccounts = new Guna.UI.WinForms.GunaButton();
+            this.btnUsers = new Guna.UI.WinForms.GunaButton();
             this.btnLogTrail = new Guna.UI.WinForms.GunaButton();
             this.btnDashboard = new Guna.UI.WinForms.GunaButton();
             this.pnlLogo = new Guna.UI.WinForms.GunaPanel();
             this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
             this.pnlOuterContainer = new Guna.UI.WinForms.GunaPanel();
             this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
-            this.pnlHeader = new Guna.UI.WinForms.GunaLinePanel();
             this.pnlFooter = new Guna.UI.WinForms.GunaLinePanel();
-            this.lblCopyright = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.pnlHeader = new Guna.UI.WinForms.GunaLinePanel();
             this.pnlNavbar.SuspendLayout();
+            this.gunaPanel1.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.pnlOuterContainer.SuspendLayout();
             this.pnlFooter.SuspendLayout();
-            this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlNavbar
@@ -58,7 +58,7 @@
             this.pnlNavbar.Controls.Add(this.btnInventory);
             this.pnlNavbar.Controls.Add(this.btnRecords);
             this.pnlNavbar.Controls.Add(this.btnSchedule);
-            this.pnlNavbar.Controls.Add(this.btnAccounts);
+            this.pnlNavbar.Controls.Add(this.btnUsers);
             this.pnlNavbar.Controls.Add(this.btnLogTrail);
             this.pnlNavbar.Controls.Add(this.btnDashboard);
             this.pnlNavbar.Controls.Add(this.pnlLogo);
@@ -68,6 +68,27 @@
             this.pnlNavbar.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.pnlNavbar.Size = new System.Drawing.Size(500, 1529);
             this.pnlNavbar.TabIndex = 39;
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Controls.Add(this.lblCopyright);
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel1.Location = new System.Drawing.Point(25, 1379);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(450, 150);
+            this.gunaPanel1.TabIndex = 12;
+            // 
+            // lblCopyright
+            // 
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.ForeColor = System.Drawing.Color.RosyBrown;
+            this.lblCopyright.Location = new System.Drawing.Point(31, 0);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(205, 30);
+            this.lblCopyright.TabIndex = 11;
+            this.lblCopyright.Text = "© 2025, WLC-CARES";
+            this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnInventory
             // 
@@ -153,33 +174,33 @@
             this.btnSchedule.TextOffsetX = 10;
             this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
-            // btnAccounts
+            // btnUsers
             // 
-            this.btnAccounts.AnimationHoverSpeed = 0.07F;
-            this.btnAccounts.AnimationSpeed = 0.03F;
-            this.btnAccounts.BaseColor = System.Drawing.Color.Transparent;
-            this.btnAccounts.BorderColor = System.Drawing.Color.Black;
-            this.btnAccounts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAccounts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAccounts.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnAccounts.Image = global::CARES.Properties.Resources.accountsIcon;
-            this.btnAccounts.ImageOffsetX = 10;
-            this.btnAccounts.ImageSize = new System.Drawing.Size(17, 17);
-            this.btnAccounts.Location = new System.Drawing.Point(25, 390);
-            this.btnAccounts.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
-            this.btnAccounts.Name = "btnAccounts";
-            this.btnAccounts.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.btnAccounts.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAccounts.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
-            this.btnAccounts.OnHoverImage = null;
-            this.btnAccounts.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
-            this.btnAccounts.Radius = 7;
-            this.btnAccounts.Size = new System.Drawing.Size(450, 120);
-            this.btnAccounts.TabIndex = 7;
-            this.btnAccounts.Text = "Manage Accounts";
-            this.btnAccounts.TextOffsetX = 10;
-            this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
+            this.btnUsers.AnimationHoverSpeed = 0.07F;
+            this.btnUsers.AnimationSpeed = 0.03F;
+            this.btnUsers.BaseColor = System.Drawing.Color.Transparent;
+            this.btnUsers.BorderColor = System.Drawing.Color.Black;
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsers.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnUsers.Image = global::CARES.Properties.Resources.accountsIcon;
+            this.btnUsers.ImageOffsetX = 10;
+            this.btnUsers.ImageSize = new System.Drawing.Size(17, 17);
+            this.btnUsers.Location = new System.Drawing.Point(25, 390);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.btnUsers.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnUsers.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(162)))));
+            this.btnUsers.OnHoverImage = null;
+            this.btnUsers.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(234)))));
+            this.btnUsers.Radius = 7;
+            this.btnUsers.Size = new System.Drawing.Size(450, 120);
+            this.btnUsers.TabIndex = 7;
+            this.btnUsers.Text = "Manage Users";
+            this.btnUsers.TextOffsetX = 10;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnLogTrail
             // 
@@ -279,17 +300,6 @@
             this.pnlFormContainer.Size = new System.Drawing.Size(2034, 1229);
             this.pnlFormContainer.TabIndex = 2;
             // 
-            // pnlHeader
-            // 
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.LineBottom = 1;
-            this.pnlHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.pnlHeader.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(2034, 150);
-            this.pnlHeader.TabIndex = 3;
-            // 
             // pnlFooter
             // 
             this.pnlFooter.Controls.Add(this.gunaLinkLabel1);
@@ -300,27 +310,6 @@
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Size = new System.Drawing.Size(2034, 150);
             this.pnlFooter.TabIndex = 4;
-            // 
-            // lblCopyright
-            // 
-            this.lblCopyright.AutoSize = true;
-            this.lblCopyright.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCopyright.ForeColor = System.Drawing.Color.RosyBrown;
-            this.lblCopyright.Location = new System.Drawing.Point(31, 0);
-            this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(205, 30);
-            this.lblCopyright.TabIndex = 11;
-            this.lblCopyright.Text = "© 2025, WLC-CARES";
-            this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Controls.Add(this.lblCopyright);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel1.Location = new System.Drawing.Point(25, 1379);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(450, 150);
-            this.gunaPanel1.TabIndex = 12;
             // 
             // gunaLinkLabel1
             // 
@@ -333,6 +322,17 @@
             this.gunaLinkLabel1.TabIndex = 0;
             this.gunaLinkLabel1.TabStop = true;
             this.gunaLinkLabel1.Text = "About";
+            // 
+            // pnlHeader
+            // 
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.LineBottom = 1;
+            this.pnlHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pnlHeader.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(2034, 150);
+            this.pnlHeader.TabIndex = 3;
             // 
             // Admin_Main
             // 
@@ -347,12 +347,12 @@
             this.Name = "Admin_Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlNavbar.ResumeLayout(false);
+            this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
             this.pnlOuterContainer.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -365,7 +365,7 @@
         private Guna.UI.WinForms.GunaButton btnInventory;
         private Guna.UI.WinForms.GunaButton btnRecords;
         private Guna.UI.WinForms.GunaButton btnSchedule;
-        private Guna.UI.WinForms.GunaButton btnAccounts;
+        private Guna.UI.WinForms.GunaButton btnUsers;
         private Guna.UI.WinForms.GunaButton btnLogTrail;
         private Guna.UI.WinForms.GunaImageButton btnLogo;
         private Guna.UI.WinForms.GunaPanel pnlFormContainer;

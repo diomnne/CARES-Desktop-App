@@ -1,22 +1,23 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace CARES
 {
-    public partial class Admin_Dashboard : Form
+    public partial class Admin_ManageUsers : Form
     {
-        public Admin_Dashboard()
+        private string connectionString = "server=127.0.0.1;uid=root;pwd=20181024;database=cares_db";
+        public Admin_ManageUsers()
         {
             InitializeComponent();
         }
+
     }
 }

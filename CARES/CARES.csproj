@@ -121,6 +121,12 @@
     <Compile Include="Admin_LogTrail.Designer.cs">
       <DependentUpon>Admin_LogTrail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ManageUsers.Designer.cs">
+      <DependentUpon>Admin_ManageUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_LogTrail.resx">
       <DependentUpon>Admin_LogTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ManageUsers.resx">
+      <DependentUpon>Admin_ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor_Main.resx">
       <DependentUpon>Doctor_Main.cs</DependentUpon>
