@@ -31,15 +31,16 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.pnlRecentLogins = new Guna.UI.WinForms.GunaElipsePanel();
-            this.pnlPendingApprovals = new Guna.UI.WinForms.GunaElipsePanel();
-            this.pnlTotalUsers = new Guna.UI.WinForms.GunaElipsePanel();
-            this.lblUsersCtr = new Guna.UI.WinForms.GunaLabel();
-            this.lblTotalUsers = new Guna.UI.WinForms.GunaLabel();
             this.lblRecentLogins = new Guna.UI.WinForms.GunaLabel();
             this.lblRecentLoginsCtr = new Guna.UI.WinForms.GunaLabel();
+            this.pnlPendingApprovals = new Guna.UI.WinForms.GunaElipsePanel();
             this.lblPendingApprovals = new Guna.UI.WinForms.GunaLabel();
             this.lblPendingApprovalsCtr = new Guna.UI.WinForms.GunaLabel();
+            this.pnlTotalUsers = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.lblNewUsers = new Guna.UI.WinForms.GunaLabel();
+            this.lblUsersCtr = new Guna.UI.WinForms.GunaLabel();
+            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.pnlRecentLogins.SuspendLayout();
             this.pnlPendingApprovals.SuspendLayout();
             this.pnlTotalUsers.SuspendLayout();
@@ -80,53 +81,6 @@
             this.pnlRecentLogins.Size = new System.Drawing.Size(445, 250);
             this.pnlRecentLogins.TabIndex = 5;
             // 
-            // pnlPendingApprovals
-            // 
-            this.pnlPendingApprovals.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
-            this.pnlPendingApprovals.Controls.Add(this.lblPendingApprovals);
-            this.pnlPendingApprovals.Controls.Add(this.lblPendingApprovalsCtr);
-            this.pnlPendingApprovals.Location = new System.Drawing.Point(982, 219);
-            this.pnlPendingApprovals.Name = "pnlPendingApprovals";
-            this.pnlPendingApprovals.Radius = 8;
-            this.pnlPendingApprovals.Size = new System.Drawing.Size(445, 250);
-            this.pnlPendingApprovals.TabIndex = 6;
-            // 
-            // pnlTotalUsers
-            // 
-            this.pnlTotalUsers.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(189)))), ((int)(((byte)(185)))));
-            this.pnlTotalUsers.Controls.Add(this.gunaPictureBox1);
-            this.pnlTotalUsers.Controls.Add(this.lblTotalUsers);
-            this.pnlTotalUsers.Controls.Add(this.lblUsersCtr);
-            this.pnlTotalUsers.Location = new System.Drawing.Point(38, 219);
-            this.pnlTotalUsers.Name = "pnlTotalUsers";
-            this.pnlTotalUsers.Radius = 8;
-            this.pnlTotalUsers.Size = new System.Drawing.Size(445, 250);
-            this.pnlTotalUsers.TabIndex = 7;
-            // 
-            // lblUsersCtr
-            // 
-            this.lblUsersCtr.AutoSize = true;
-            this.lblUsersCtr.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsersCtr.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsersCtr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.lblUsersCtr.Location = new System.Drawing.Point(28, 66);
-            this.lblUsersCtr.Name = "lblUsersCtr";
-            this.lblUsersCtr.Size = new System.Drawing.Size(57, 63);
-            this.lblUsersCtr.TabIndex = 0;
-            this.lblUsersCtr.Text = "0";
-            // 
-            // lblTotalUsers
-            // 
-            this.lblTotalUsers.AutoSize = true;
-            this.lblTotalUsers.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalUsers.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.lblTotalUsers.Location = new System.Drawing.Point(34, 141);
-            this.lblTotalUsers.Name = "lblTotalUsers";
-            this.lblTotalUsers.Size = new System.Drawing.Size(148, 33);
-            this.lblTotalUsers.TabIndex = 1;
-            this.lblTotalUsers.Text = "Total Users";
-            // 
             // lblRecentLogins
             // 
             this.lblRecentLogins.AutoSize = true;
@@ -150,6 +104,17 @@
             this.lblRecentLoginsCtr.Size = new System.Drawing.Size(57, 63);
             this.lblRecentLoginsCtr.TabIndex = 2;
             this.lblRecentLoginsCtr.Text = "0";
+            // 
+            // pnlPendingApprovals
+            // 
+            this.pnlPendingApprovals.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(219)))), ((int)(((byte)(218)))));
+            this.pnlPendingApprovals.Controls.Add(this.lblPendingApprovals);
+            this.pnlPendingApprovals.Controls.Add(this.lblPendingApprovalsCtr);
+            this.pnlPendingApprovals.Location = new System.Drawing.Point(982, 219);
+            this.pnlPendingApprovals.Name = "pnlPendingApprovals";
+            this.pnlPendingApprovals.Radius = 8;
+            this.pnlPendingApprovals.Size = new System.Drawing.Size(445, 250);
+            this.pnlPendingApprovals.TabIndex = 6;
             // 
             // lblPendingApprovals
             // 
@@ -175,6 +140,18 @@
             this.lblPendingApprovalsCtr.TabIndex = 8;
             this.lblPendingApprovalsCtr.Text = "0";
             // 
+            // pnlTotalUsers
+            // 
+            this.pnlTotalUsers.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(189)))), ((int)(((byte)(185)))));
+            this.pnlTotalUsers.Controls.Add(this.gunaPictureBox1);
+            this.pnlTotalUsers.Controls.Add(this.lblNewUsers);
+            this.pnlTotalUsers.Controls.Add(this.lblUsersCtr);
+            this.pnlTotalUsers.Location = new System.Drawing.Point(38, 219);
+            this.pnlTotalUsers.Name = "pnlTotalUsers";
+            this.pnlTotalUsers.Radius = 8;
+            this.pnlTotalUsers.Size = new System.Drawing.Size(445, 250);
+            this.pnlTotalUsers.TabIndex = 7;
+            // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -187,12 +164,46 @@
             this.gunaPictureBox1.TabIndex = 2;
             this.gunaPictureBox1.TabStop = false;
             // 
+            // lblNewUsers
+            // 
+            this.lblNewUsers.AutoSize = true;
+            this.lblNewUsers.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewUsers.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.lblNewUsers.Location = new System.Drawing.Point(34, 141);
+            this.lblNewUsers.Name = "lblNewUsers";
+            this.lblNewUsers.Size = new System.Drawing.Size(147, 33);
+            this.lblNewUsers.TabIndex = 1;
+            this.lblNewUsers.Text = "New Users";
+            // 
+            // lblUsersCtr
+            // 
+            this.lblUsersCtr.AutoSize = true;
+            this.lblUsersCtr.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsersCtr.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsersCtr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.lblUsersCtr.Location = new System.Drawing.Point(28, 66);
+            this.lblUsersCtr.Name = "lblUsersCtr";
+            this.lblUsersCtr.Size = new System.Drawing.Size(57, 63);
+            this.lblUsersCtr.TabIndex = 0;
+            this.lblUsersCtr.Text = "0";
+            // 
+            // gunaElipsePanel1
+            // 
+            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.Gainsboro;
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(38, 496);
+            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
+            this.gunaElipsePanel1.Radius = 8;
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(1389, 500);
+            this.gunaElipsePanel1.TabIndex = 8;
+            // 
             // Admin_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(2034, 1630);
+            this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.pnlTotalUsers);
             this.Controls.Add(this.pnlPendingApprovals);
             this.Controls.Add(this.pnlRecentLogins);
@@ -220,12 +231,13 @@
         private Guna.UI.WinForms.GunaElipsePanel pnlRecentLogins;
         private Guna.UI.WinForms.GunaElipsePanel pnlPendingApprovals;
         private Guna.UI.WinForms.GunaElipsePanel pnlTotalUsers;
-        private Guna.UI.WinForms.GunaLabel lblTotalUsers;
+        private Guna.UI.WinForms.GunaLabel lblNewUsers;
         private Guna.UI.WinForms.GunaLabel lblUsersCtr;
         private Guna.UI.WinForms.GunaLabel lblRecentLogins;
         private Guna.UI.WinForms.GunaLabel lblRecentLoginsCtr;
         private Guna.UI.WinForms.GunaLabel lblPendingApprovals;
         private Guna.UI.WinForms.GunaLabel lblPendingApprovalsCtr;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
     }
 }
