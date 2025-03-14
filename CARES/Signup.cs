@@ -18,25 +18,9 @@ namespace CARES
         public Signup()
         {
             InitializeComponent();
-        }
 
-        private bool EmailExists(string email)
-        {
-            bool exists = false;
-            string connectionString = "server=127.0.0.1;uid=root;pwd=20181024;database=cares_db";
-
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM accounts WHERE email = @Email";
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    exists = Convert.ToInt32(cmd.ExecuteScalar()) > 0;
-                }
-            }
-
-            return exists;
+            dtpDateOfBirth.MaxDate = DateTime.Today;
+            dtpDateOfBirth.Value = DateTime.Today;
         }
 
         private bool ValidateForm()
@@ -124,7 +108,7 @@ namespace CARES
             //Validate MI
             if (!string.IsNullOrWhiteSpace(txtMI.Text))
             {
-                if (!Regex.IsMatch(txtMI.Text, @"^[A-Za-z]$")) // Only 1 letter
+                if (!Regex.IsMatch(txtMI.Text, @"^[A-Za-z]$")) 
                 {
                     lblMIError.Text = "Invalid M.I.";
                     lblMIError.Visible = true;
@@ -132,11 +116,30 @@ namespace CARES
                 }
                 else
                 {
-                    txtMI.Text = txtMI.Text.ToUpper(); // Convert to uppercase before saving
+                    txtMI.Text = txtMI.Text.ToUpper(); 
                 }
             }
 
             return isValid;
+        }
+
+        private bool EmailExists(string email)
+        {
+            bool exists = false;
+            string connectionString = "server=127.0.0.1;uid=root;pwd=20181024;database=cares_db";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM accounts WHERE email = @Email";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    exists = Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                }
+            }
+
+            return exists;
         }
 
         private void lnkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -242,6 +245,8 @@ namespace CARES
                     }
 
                     MessageBox.Show("Registration Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearForm();
+                    Login l = new Login();
                 }
                 catch (Exception ex)
                 {
@@ -250,5 +255,31 @@ namespace CARES
             }
         }
 
+        private void ClearForm()
+        {
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
+            txtMI.Text = "";
+            txtEmail.Text = "";
+            txtPassword.Text = "";
+            txtRepeatPass.Text = "";
+            cmbGender.SelectedIndex = -1;
+        }
+
+        private void btnClearForm_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to clear the form?",
+                "Confirm Clear",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                ClearForm();
+                txtFirstName.Focus();
+            }
+        }
     }
 }
