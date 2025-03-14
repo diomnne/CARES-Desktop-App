@@ -16,7 +16,7 @@ namespace CARES
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_Main());
+            Application.Run(new Signup());
         }
     }
 }
