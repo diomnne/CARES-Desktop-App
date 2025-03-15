@@ -31,30 +31,33 @@ namespace CARES
             childForm.Show();
         }
 
+        private static Dictionary<Form, GunaButton> activeButtons = new Dictionary<Form, GunaButton>();
         private static GunaButton currentBtn;
 
-        public static void ActivateButton(object sender, Color activeColor)
+        public static void ActivateButton(Form form, object sender, Color baseColor, Color foreColor, Color disabledBaseColor, Color disabledForeColor)
         {
             if (sender is GunaButton btn)
             {
-                if (currentBtn != null)
+                if (activeButtons.ContainsKey(form) && activeButtons[form] != null)
                 {
-                    DisableButton(currentBtn);
+                    DisableButton(activeButtons[form], disabledBaseColor, disabledForeColor);
                 }
 
-                currentBtn = btn;
-                currentBtn.BaseColor = activeColor; 
-                currentBtn.Size = new Size(currentBtn.Width, currentBtn.Height);
+                activeButtons[form] = btn;
+                btn.BaseColor = baseColor;
+                btn.ForeColor = foreColor;
             }
         }
 
-        public static void DisableButton(GunaButton btn)
+        public static void DisableButton(GunaButton btn, Color baseColor, Color foreColor)
         {
             if (btn != null)
             {
-                btn.BaseColor = Color.Transparent;
+                btn.BaseColor = baseColor;
+                btn.ForeColor = foreColor;
             }
         }
+
 
     }
 }

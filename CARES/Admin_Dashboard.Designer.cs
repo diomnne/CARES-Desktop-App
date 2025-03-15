@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblDashboard = new System.Windows.Forms.Label();
-            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pnlRight = new Guna.UI.WinForms.GunaLinePanel();
             this.pnlRecentLogins = new Guna.UI.WinForms.GunaElipsePanel();
             this.lblRecentLogins = new Guna.UI.WinForms.GunaLabel();
             this.lblRecentLoginsCtr = new Guna.UI.WinForms.GunaLabel();
@@ -40,11 +40,13 @@
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.lblNewUsers = new Guna.UI.WinForms.GunaLabel();
             this.lblUsersCtr = new Guna.UI.WinForms.GunaLabel();
-            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.pnlOutline = new Guna.UI.WinForms.GunaElipsePanel();
+            this.pnlUsersContainer = new Guna.UI.WinForms.GunaElipsePanel();
             this.pnlRecentLogins.SuspendLayout();
             this.pnlPendingApprovals.SuspendLayout();
             this.pnlTotalUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.pnlOutline.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDashboard
@@ -58,17 +60,17 @@
             this.lblDashboard.TabIndex = 3;
             this.lblDashboard.Text = "Dashboard";
             // 
-            // gunaLinePanel1
+            // pnlRight
             // 
-            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaLinePanel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaLinePanel1.LineLeft = 1;
-            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel1.Location = new System.Drawing.Point(1434, 0);
-            this.gunaLinePanel1.Name = "gunaLinePanel1";
-            this.gunaLinePanel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 30);
-            this.gunaLinePanel1.Size = new System.Drawing.Size(600, 1630);
-            this.gunaLinePanel1.TabIndex = 4;
+            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRight.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pnlRight.LineLeft = 1;
+            this.pnlRight.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.pnlRight.Location = new System.Drawing.Point(1434, 0);
+            this.pnlRight.Name = "pnlRight";
+            this.pnlRight.Padding = new System.Windows.Forms.Padding(0, 30, 0, 30);
+            this.pnlRight.Size = new System.Drawing.Size(600, 1630);
+            this.pnlRight.TabIndex = 4;
             // 
             // pnlRecentLogins
             // 
@@ -188,14 +190,25 @@
             this.lblUsersCtr.TabIndex = 0;
             this.lblUsersCtr.Text = "0";
             // 
-            // gunaElipsePanel1
+            // pnlOutline
             // 
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.Gainsboro;
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(38, 496);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 8;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(1389, 500);
-            this.gunaElipsePanel1.TabIndex = 8;
+            this.pnlOutline.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.pnlOutline.Controls.Add(this.pnlUsersContainer);
+            this.pnlOutline.Location = new System.Drawing.Point(38, 496);
+            this.pnlOutline.Name = "pnlOutline";
+            this.pnlOutline.Radius = 8;
+            this.pnlOutline.Size = new System.Drawing.Size(1389, 500);
+            this.pnlOutline.TabIndex = 8;
+            // 
+            // pnlUsersContainer
+            // 
+            this.pnlUsersContainer.BackColor = System.Drawing.Color.Transparent;
+            this.pnlUsersContainer.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.pnlUsersContainer.Location = new System.Drawing.Point(2, 2);
+            this.pnlUsersContainer.Name = "pnlUsersContainer";
+            this.pnlUsersContainer.Radius = 8;
+            this.pnlUsersContainer.Size = new System.Drawing.Size(1385, 496);
+            this.pnlUsersContainer.TabIndex = 8;
             // 
             // Admin_Dashboard
             // 
@@ -203,11 +216,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(2034, 1630);
-            this.Controls.Add(this.gunaElipsePanel1);
+            this.Controls.Add(this.pnlOutline);
             this.Controls.Add(this.pnlTotalUsers);
             this.Controls.Add(this.pnlPendingApprovals);
             this.Controls.Add(this.pnlRecentLogins);
-            this.Controls.Add(this.gunaLinePanel1);
+            this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.lblDashboard);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_Dashboard";
@@ -219,6 +232,7 @@
             this.pnlTotalUsers.ResumeLayout(false);
             this.pnlTotalUsers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            this.pnlOutline.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +241,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblDashboard;
-        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private Guna.UI.WinForms.GunaLinePanel pnlRight;
         private Guna.UI.WinForms.GunaElipsePanel pnlRecentLogins;
         private Guna.UI.WinForms.GunaElipsePanel pnlPendingApprovals;
         private Guna.UI.WinForms.GunaElipsePanel pnlTotalUsers;
@@ -238,6 +252,7 @@
         private Guna.UI.WinForms.GunaLabel lblPendingApprovals;
         private Guna.UI.WinForms.GunaLabel lblPendingApprovalsCtr;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
+        private Guna.UI.WinForms.GunaElipsePanel pnlOutline;
+        private Guna.UI.WinForms.GunaElipsePanel pnlUsersContainer;
     }
 }
