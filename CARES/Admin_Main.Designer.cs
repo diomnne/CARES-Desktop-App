@@ -41,14 +41,11 @@
             this.btnLogo = new Guna.UI.WinForms.GunaImageButton();
             this.pnlOuterContainer = new Guna.UI.WinForms.GunaPanel();
             this.pnlFormContainer = new Guna.UI.WinForms.GunaPanel();
-            this.pnlFooter = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
             this.pnlHeader = new Guna.UI.WinForms.GunaLinePanel();
             this.pnlNavbar.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.pnlOuterContainer.SuspendLayout();
-            this.pnlFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlNavbar
@@ -83,11 +80,11 @@
             this.lblCopyright.AutoSize = true;
             this.lblCopyright.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCopyright.ForeColor = System.Drawing.Color.RosyBrown;
-            this.lblCopyright.Location = new System.Drawing.Point(31, 0);
+            this.lblCopyright.Location = new System.Drawing.Point(57, 0);
             this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(205, 30);
+            this.lblCopyright.Size = new System.Drawing.Size(306, 30);
             this.lblCopyright.TabIndex = 11;
-            this.lblCopyright.Text = "© 2025, WLC-CARES";
+            this.lblCopyright.Text = "Copyright © 2025, WLC-CARES.";
             this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnInventory
@@ -283,7 +280,6 @@
             // 
             this.pnlOuterContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.pnlOuterContainer.Controls.Add(this.pnlFormContainer);
-            this.pnlOuterContainer.Controls.Add(this.pnlFooter);
             this.pnlOuterContainer.Controls.Add(this.pnlHeader);
             this.pnlOuterContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlOuterContainer.Location = new System.Drawing.Point(500, 0);
@@ -297,31 +293,8 @@
             this.pnlFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFormContainer.Location = new System.Drawing.Point(0, 150);
             this.pnlFormContainer.Name = "pnlFormContainer";
-            this.pnlFormContainer.Size = new System.Drawing.Size(2034, 1229);
+            this.pnlFormContainer.Size = new System.Drawing.Size(2034, 1379);
             this.pnlFormContainer.TabIndex = 2;
-            // 
-            // pnlFooter
-            // 
-            this.pnlFooter.Controls.Add(this.gunaLinkLabel1);
-            this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.pnlFooter.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 1379);
-            this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(2034, 150);
-            this.pnlFooter.TabIndex = 4;
-            // 
-            // gunaLinkLabel1
-            // 
-            this.gunaLinkLabel1.AutoSize = true;
-            this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaLinkLabel1.Location = new System.Drawing.Point(810, 48);
-            this.gunaLinkLabel1.Name = "gunaLinkLabel1";
-            this.gunaLinkLabel1.Size = new System.Drawing.Size(79, 32);
-            this.gunaLinkLabel1.TabIndex = 0;
-            this.gunaLinkLabel1.TabStop = true;
-            this.gunaLinkLabel1.Text = "About";
             // 
             // pnlHeader
             // 
@@ -351,8 +324,6 @@
             this.gunaPanel1.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
             this.pnlOuterContainer.ResumeLayout(false);
-            this.pnlFooter.ResumeLayout(false);
-            this.pnlFooter.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -370,9 +341,7 @@
         private Guna.UI.WinForms.GunaImageButton btnLogo;
         private Guna.UI.WinForms.GunaPanel pnlFormContainer;
         private Guna.UI.WinForms.GunaLinePanel pnlHeader;
-        private Guna.UI.WinForms.GunaLinePanel pnlFooter;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaLabel lblCopyright;
-        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
     }
 }
